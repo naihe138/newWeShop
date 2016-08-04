@@ -1,0 +1,322 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+input {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+body {
+  font-family: Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+  background: #f5f5f5;
+}
+input {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+}
+a,
+input {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+}
+::-webkit-input-placeholder {
+  color: mediumvioletred;
+  text-indent: 10px;
+}
+.padded {
+  padding: 0 0.373333rem;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:before {
+  display: table;
+  content: ' ';
+}
+.clearfix:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.header {
+  background: #ec3b50;
+  height: 1.293333rem;
+}
+.header .serch {
+  height: 0.88rem;
+  width: 8.36rem;
+  float: right;
+  margin-top: 0.2rem;
+  border-radius: 0.106667rem;
+  font-size: 16px;
+  text-indent: 0.133333rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+[data-dpr="2"] .header .serch {
+  font-size: 32px;
+}
+[data-dpr="3"] .header .serch {
+  font-size: 48px;
+}
+.header .shezhi {
+  color: #fff;
+  font-size: 0.533333rem;
+  line-height: 1.293333rem;
+}
+.banner {
+  width: 100%;
+  height: 4.106667rem;
+  overflow: hidden;
+  position: relative;
+}
+.banner .swiper-container,
+.banner .swiper-wrapper,
+.banner img {
+  width: 100%;
+  height: 100%;
+}
+.banner .banner-nav {
+  position: absolute;
+  right: 0.266667rem;
+  bottom: 10px;
+  z-index: 10;
+}
+.banner .banner-nav span {
+  display: block;
+  width: 0.266667rem;
+  height: 0.266667rem;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: #fff;
+  float: left;
+}
+.banner .banner-nav span.active {
+  background: #ec3b50;
+}
+.navBox {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  padding-top: 0.266667rem;
+  padding-bottom: 0.133333rem;
+}
+.navBox .nav-list {
+  width: 25%;
+  float: left;
+  display: block;
+}
+.navBox .nav-list > div {
+  margin: 0 auto;
+  width: 1.52rem;
+  height: 1.52rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.52rem;
+  color: #fff;
+}
+.navBox .nav-list > div span {
+  font-size: 0.6rem;
+}
+.navBox .nav-list p {
+  text-align: center;
+  line-height: 0.826667rem;
+  font-size: 12px;
+  color: #333333;
+  clear: both;
+}
+[data-dpr="2"] .navBox .nav-list p {
+  font-size: 24px;
+}
+[data-dpr="3"] .navBox .nav-list p {
+  font-size: 36px;
+}
+.navBox .nav-list:nth-of-type(1) > div {
+  background: #ffb709;
+}
+.navBox .nav-list:nth-of-type(2) > div {
+  background: #ff5165;
+}
+.navBox .nav-list:nth-of-type(3) > div {
+  background: #2fa3f4;
+}
+.navBox .nav-list:nth-of-type(4) > div {
+  background: #9e6eee;
+}
+.ad {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+.ad div {
+  width: 50%;
+  overflow: hidden;
+  height: 4.466667rem;
+}
+.ad div img {
+  display: block;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+}
+.ad .imgLeft img {
+  height: 50%;
+}
+.ad .imgRight img {
+  height: 100%;
+}
+.index-title {
+  height: 0.933333rem;
+  padding-left: 28px;
+  line-height: 0.933333rem;
+  font-size: 14px;
+  color: #333333;
+  border-top: 1px solid #d9d9d9;
+}
+[data-dpr="2"] .index-title {
+  font-size: 28px;
+}
+[data-dpr="3"] .index-title {
+  font-size: 42px;
+}
+.index-title span {
+  display: inline-block;
+  margin-right: 0.133333rem;
+  color: #ec3b50;
+}
+.flagship {
+  width: 100%;
+  overflow: hidden;
+  margin: 0.266667rem 0;
+}
+.flagship .ship {
+  width: 100%;
+  overflow: hidden;
+}
+.flagship .ship div {
+  height: 2.8rem;
+}
+.flagship .ship div img {
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.flagship .shipBig {
+  width: 3.1rem;
+  height: 100%;
+}
+.flagship .shipBig img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.flagship .shipLittle {
+  width: 6.9rem;
+  height: 100%;
+}
+.flagship .shipLittle img {
+  display: block;
+  width: 33.33%;
+  height: 100%;
+  float: left;
+}
+.them {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+}
+.them img {
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  float: left;
+}
+.them .themTop {
+  width: 100%;
+  overflow: hidden;
+}
+.them .themTop img {
+  width: 50%;
+}
+.them .themBottom {
+  width: 100%;
+  overflow: hidden;
+}
+.them .themBottom img {
+  width: 25%;
+}
+.like {
+  background: #fff;
+  overflow: hidden;
+  margin: 0.266667rem 0;
+}
+.like .likeList {
+  width: 4.453333rem;
+  overflow: hidden;
+}
+.like .likeList img {
+  display: block;
+  width: 100%;
+  height: 3.666667rem;
+  border: 1px solid #d9d9d9;
+}
+.like .likeList p {
+  font-size: 12px;
+  padding-top: 0.266667rem;
+  color: #333333;
+}
+[data-dpr="2"] .like .likeList p {
+  font-size: 24px;
+}
+[data-dpr="3"] .like .likeList p {
+  font-size: 36px;
+}
+.like .likeList:nth-of-type(1) {
+  float: left;
+}
+.like .likeList:nth-of-type(2) {
+  float: right;
+}
+.like .likeList span {
+  display: inline-block;
+  font-size: 12px;
+  padding-top: 0.266667rem;
+  color: #eb4d22;
+}
+[data-dpr="2"] .like .likeList span {
+  font-size: 24px;
+}
+[data-dpr="3"] .like .likeList span {
+  font-size: 36px;
+}

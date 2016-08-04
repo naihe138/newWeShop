@@ -1,0 +1,241 @@
+@import url('./comment.less');
+
+.header{
+	background: @mainColor;
+	height: 1.293333rem;
+	.serch{
+		height: 0.88rem;
+		width: 8.36rem;
+		float: right;
+		margin-top: 0.2rem;
+		border-radius: 0.106667rem;
+		.px2px(16px);
+		text-indent: 0.133333rem;
+		background: rgba(0,0,0,0.3);
+		color: #fff;
+	}
+	.shezhi{
+		color: #fff;
+		font-size: 0.533333rem;
+		line-height: 1.293333rem;
+	}
+}
+
+.banner{
+	width: 100%;
+	height: 4.106667rem;
+	overflow: hidden;
+	position: relative;
+	.swiper-container, .swiper-wrapper, img{
+		width: 100%;
+		height: 100%;
+	}
+	.banner-nav{
+		position: absolute;
+		right: 0.266667rem;
+		bottom: 10px;
+		z-index: 10;
+		span{
+			display: block;
+			width: 0.266667rem;
+			height: 0.266667rem;
+			border-radius: 50%;
+			margin-right: 8px;
+			background: #fff;
+			.fl;
+			&.active{
+				background: @mainColor;
+			}
+		}
+
+	}
+}
+
+.navBox{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	padding-top: 0.266667rem;
+	padding-bottom: 0.133333rem;
+	.nav-list{
+		width: 25%;
+		float: left;
+		display: block;
+		&>div{
+			margin: 0 auto; 
+			width: 1.52rem;
+			height: 1.52rem;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 1.52rem;
+			color: #fff;
+			span{
+				font-size: 0.6rem;
+			}
+			
+		}
+		p{
+			text-align: center;
+			line-height: 0.826667rem;
+			.px2px(12px);
+			color: @textColor;
+			clear: both;
+		}
+		&:nth-of-type(1){
+			&>div{
+				background: #ffb709;
+			}
+		}
+		&:nth-of-type(2){
+			&>div{
+				background: #ff5165;
+			}
+		}
+		&:nth-of-type(3){
+			&>div{
+				background: #2fa3f4;
+			}
+		}
+		&:nth-of-type(4){
+			&>div{
+				background: #9e6eee;
+			}
+		}
+	}
+}
+
+.ad{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	div{
+		width: 50%;
+		overflow: hidden;
+		height: 4.466667rem;
+		img{
+			display: block;
+			border: 1px solid @borderColor;
+			width: 100%;
+		}
+	}
+	.imgLeft{
+		img{
+			height: 50%;
+		}
+	}
+	.imgRight{
+		img{
+			height: 100%;
+		}
+	}
+}
+
+.index-title{
+	height: 0.933333rem;
+	padding-left: 28px;
+	line-height: 0.933333rem;
+	.px2px(14px);
+	color: @textColor;
+	border-top: 1px solid @borderColor;
+	span{
+		display: inline-block;
+		margin-right: 0.133333rem;
+		color: @mainColor;
+	}
+}
+.flagship{
+	width: 100%;
+	overflow: hidden;
+	margin: 0.266667rem 0;
+	.ship{
+		width: 100%;
+		overflow: hidden;
+		div{
+			height: 2.8rem;
+			img{
+				border-right: 1px solid @borderColor;
+				border-bottom: 1px solid @borderColor;
+			}
+		}
+	}
+	.shipBig{
+		width: 3.1rem;
+		height: 100%;
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.shipLittle{
+		width: 6.9rem;
+		height: 100%;
+		img{
+			display: block;
+			width: 33.33%;
+			height: 100%;
+			float: left;
+		}
+	}
+}
+
+
+
+.them{
+	width: 100%;
+	overflow: hidden;
+	background: #fff;
+	img{
+		border-right: 1px solid @borderColor;
+		border-bottom: 1px solid @borderColor;
+		float: left;
+	}
+	.themTop{
+		width: 100%;
+		overflow: hidden;
+		img{
+			width: 50%;
+			
+		}
+	}
+	.themBottom{
+		width: 100%;
+		overflow: hidden;
+		img{
+			width: 25%;
+		}
+	}
+}
+
+.like{
+	background: #fff;
+	overflow: hidden;
+	margin: 0.266667rem 0;
+	.likeList{
+		width: 4.453333rem;
+		overflow: hidden;
+		img{
+			display: block;
+			width: 100%;
+			height: 3.666667rem;
+			border: 1px solid @borderColor;
+		}
+		p{
+			.px2px(12px);
+			padding-top: 0.266667rem;
+			color: @textColor;
+		}
+		&:nth-of-type(1){
+			float: left;
+		}
+		&:nth-of-type(2){
+			float: right;
+		}
+		span{
+			display: inline-block;
+			.px2px(12px);
+			padding-top: 0.266667rem;
+			color: #eb4d22;
+		}
+	}
+}

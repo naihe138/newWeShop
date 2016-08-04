@@ -1,0 +1,15 @@
+.px2px(@px){
+    font-size: @px;
+    [data-dpr="2"] & {
+        font-size: @px * 2;
+    }
+    [data-dpr="3"] & {
+        font-size: @px* 3
+    }
+}
+
+body{
+    .px2px(14px);
+    margin-top: 0.75rem;
+    width: 1.0rem
+}
