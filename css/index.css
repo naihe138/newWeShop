@@ -75,6 +75,10 @@ a {
 .header {
   background: #ec3b50;
   height: 1.293333rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
 }
 .header .serch {
   height: 0.88rem;
@@ -97,6 +101,47 @@ a {
   color: #fff;
   font-size: 0.533333rem;
   line-height: 1.293333rem;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  padding-top: 1.3rem;
+  padding-bottom: 1.3rem;
+}
+.foot-nav {
+  position: absolute;
+  height: 1.226667rem;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-top: 1px solid #d9d9d9;
+}
+.foot-nav a {
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: #333333;
+}
+.foot-nav a span {
+  font-size: 16px;
+  display: inline-block;
+  padding-top: 0.133333rem;
+}
+[data-dpr="2"] .foot-nav a span {
+  font-size: 32px;
+}
+[data-dpr="3"] .foot-nav a span {
+  font-size: 48px;
+}
+.foot-nav a p {
+  line-height: 0.4rem;
+}
+.foot-nav a.active {
+  color: #ec3b50;
 }
 .banner {
   width: 100%;

@@ -1,0 +1,64 @@
+@import url('./comment.less');
+
+// 头部
+.header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.container{
+	width: 100%;
+	position: absolute;
+	top: 1.3rem;
+	bottom: 0;
+}
+.signIn{
+	width: 100%;
+	height: 4.6rem;
+	background: url('../imgs/signIn.png') no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+	overflow: hidden;
+	span{
+		display: inline-block;
+		margin: 0.4rem 0 0 0.373333rem;
+	}
+	p{
+		position: absolute;
+		width: 2.32rem;
+		height: 2.32rem;
+		background-color: #fff;
+		border-radius: 50%;
+		text-align: center;
+		left: 50%;
+		top: 50%;
+		margin: -1.16rem 0 0 -1.16rem;
+		border: 2px solid @mainColor;
+		color: @mainColor;
+		.px2px(16px);
+		padding-top: 0.52rem;
+		overflow: hidden;
+	}
+}
+.record-title{
+	line-height: 1.093333rem;
+	margin-top: 0.106667rem;
+	padding-left: 0.373333rem;
+}
+.list{
+	li{
+		clear: both;
+		height: 1.173333rem;
+		padding: 0 0.373333rem;
+		line-height: 1.173333rem;
+		border-top: 1px solid @borderColor;
+		border-bottom: 1px solid @borderColor;
+		margin-top: -1px;
+		overflow: hidden;
+		span{
+			color: #399800;
+		}
+	}
+
+}

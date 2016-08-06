@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../js/flexible.js"></script>
+    <title>注册新用户</title>
+    <link rel="stylesheet" type="text/css" href="../fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/logIn.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header padded clearfix cHeader">
+        <span class="iconfont">取消</span>
+        <h3 class="tiltle">注册新用户</h3>
+    </div>
+    <div class="container" id="container">
+        <div class="navBox">
+            <div class="register-nav clearfix">
+                <span class="fl active"><i class="iconfont">&#xe600</i>普通注册</span>
+                <span class="fr"><i class="iconfont">&#xe600</i>手机注册</span>
+            </div>
+        </div>
+        <div class="normalReg">
+            <div class="logForm">
+                    <div class="clearfix hasBorder">
+                        <span class="iconfont">&#xe600</span>
+                        <input type="text" name="username" placeholder="用户名"></input>
+                    </div>
+                    <div class="clearfix hasBorder">
+                        <span class="iconfont">&#xe600</span>
+                        <input type="text" name="regCode" placeholder="密码"></input>
+                    </div>
+                    <div class="clearfix hasBorder">
+                        <span class="iconfont">&#xe600</span>
+                        <input type="text" name="regCode" placeholder="重复密码"></input>
+                    </div>
+                    <div class="clearfix">
+                        <span class="iconfont">&#xe600</span>
+                        <input type="text" name="email" placeholder="邮箱地址"></input>
+                    </div>
+                </div>
+                <div class="logInBtn">注册</div>
+        </div>
+        <div class="telReg">
+            <div class="step1">
+                <div class="logForm">
+                    <div class="clearfix">
+                        <span class="iconfont">&#xe600</span>
+                        <input type="text" name="tel" placeholder="手机号"></input>
+                    </div>
+                    <div class="clearfix">
+                        <span class="iconfont">&#xe600</span>
+                        <input class="verify" type="text" name="code1" placeholder="请输入验证码"></input>
+                        <p class="yanzhenma yanzhengtext">发送验证码</p>
+                    </div>
+                </div>
+                <div class="logInBtn">下一步</div>
+            </div>
+            <div class="step2">
+                <div class="logForm">
+                    <div class="clearfix">
+                        <span class="iconfont">&#xe600</span>
+                        <input type="password" name="msgCode" placeholder="密码"></input>
+                    </div>
+                    <div class="clearfix">
+                        <span class="iconfont">&#xe600</span>
+                        <input type="password" name="code2" placeholder="重复密码"></input>
+                    </div>
+                </div>
+                <div class="logInBtn">完成注册</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../js/zepto.min.js"></script>
+<script type="text/javascript" src="../js/xscroll.js"></script>
+<script type="text/javascript" src="../js/logIn.js"></script>
+
+</html>
