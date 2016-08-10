@@ -1,5 +1,5 @@
 $(function() {
-
+	var WebUrl = 'http://api.shopbymall.com/api/home';
 	// 整个项目的初始化函数	
 	function init(){
 		// 整个容器滚动
@@ -22,19 +22,19 @@ $(function() {
 				if(res.returnstate == 200){
 					res.returnvalue.forEach(function(item, i){
 						console.log(item);
-						tem += '<div class="swiper-slide"><img src="'+item.ImgSrc+'"></div>';
+						tem += '<div class="swiper-slide"><img src="'+(WebUrl + item.ImgSrc)+'" onerror="javascript:this.src=\'../imgs/bb.jpg\'"></div>';
 						navTem += '<span></span>';
 					})
 				}
 				bannerBox.append($(tem));
 				nav.append($(navTem));
 				nav.find('span').eq(0).addClass('active');
-				// 
 				setTimeout(function(){
 					var swiper = new Swiper('.swiper-container', {
-				        loop: true,
+				        loop: false,
 				        onSlideChangeEnd: function(){
-				        	nav.find('span').eq(swiper.activeIndex-2).addClass('active').siblings('span').removeClass('active');
+				        	console.log(swiper.activeIndex);
+				        	nav.find('span').eq(swiper.activeIndex).addClass('active').siblings('span').removeClass('active');
 				        }
 				    });
 				}, 30)

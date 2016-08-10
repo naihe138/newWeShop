@@ -37,7 +37,7 @@ body {
     color: @textColor;
 }
 
-input {
+input,textarea {
     -webkit-appearance: none;
     outline: none;
     border: none;
@@ -45,7 +45,7 @@ input {
 }
 
 a,
-input {
+input,textarea {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -107,7 +107,7 @@ a {
     width: 100%;
     .iconfont{
         color: #fff;
-        font-size: 0.533333rem;
+        .px2px(12px);
         line-height: 1.293333rem;
     }
     .tiltle{

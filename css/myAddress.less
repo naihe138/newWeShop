@@ -1,0 +1,71 @@
+@import url('./comment.less');
+// 头部
+.header{
+	position: absolute;
+	top: 0;
+}
+// 容器
+.container{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	padding-top: 1.3rem;
+}
+.addressList{
+	overflow: hidden;
+	background: #fff;
+	margin: 0.266667rem 0;
+	border-bottom: 1px solid @borderColor;
+	border-top: 1px solid @borderColor;
+}
+.accept{
+	overflow: hidden;
+	padding: 0.373333rem;
+	line-height: 0.5rem;
+	position: relative;
+	border-bottom: 1px solid @borderColor;
+
+	.title{
+		color: #777777;
+		float: left;
+		width: 1.68rem;
+	}
+	.content{
+		float: left;
+		width: 6.5rem;
+		i{
+			padding-left: 0.2rem;
+		}
+	}
+	.address{
+		padding-top: 0.2rem;
+	}
+	.arrow{
+		position: absolute;
+		right: 0.373333rem;
+		top: 0.8rem;
+		.px2px(14px);
+		color: #777;
+	}
+}
+.edit{
+	overflow: hidden;
+	padding: 0 0.373333rem;
+	height: 1.146667rem;
+	line-height: 1.146667rem;
+	.rightText{
+		float: right;
+		color: #777;
+		span{
+			display: inline-block;
+		}
+		.delete{
+			padding-right: 0.5rem;
+		}
+		i{
+			padding-right: 0.2rem;
+			color: @mainColor;
+		}
+	}
+}

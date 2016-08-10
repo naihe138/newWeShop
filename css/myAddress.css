@@ -107,3 +107,76 @@ a {
 [data-dpr="3"] .cHeader .tiltle {
   font-size: 48px;
 }
+.header {
+  position: absolute;
+  top: 0;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  padding-top: 1.3rem;
+}
+.addressList {
+  overflow: hidden;
+  background: #fff;
+  margin: 0.266667rem 0;
+  border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #d9d9d9;
+}
+.accept {
+  overflow: hidden;
+  padding: 0.373333rem;
+  line-height: 0.5rem;
+  position: relative;
+  border-bottom: 1px solid #d9d9d9;
+}
+.accept .title {
+  color: #777777;
+  float: left;
+  width: 1.68rem;
+}
+.accept .content {
+  float: left;
+  width: 6.5rem;
+}
+.accept .content i {
+  padding-left: 0.2rem;
+}
+.accept .address {
+  padding-top: 0.2rem;
+}
+.accept .arrow {
+  position: absolute;
+  right: 0.373333rem;
+  top: 0.8rem;
+  font-size: 14px;
+  color: #777;
+}
+[data-dpr="2"] .accept .arrow {
+  font-size: 28px;
+}
+[data-dpr="3"] .accept .arrow {
+  font-size: 42px;
+}
+.edit {
+  overflow: hidden;
+  padding: 0 0.373333rem;
+  height: 1.146667rem;
+  line-height: 1.146667rem;
+}
+.edit .rightText {
+  float: right;
+  color: #777;
+}
+.edit .rightText span {
+  display: inline-block;
+}
+.edit .rightText .delete {
+  padding-right: 0.5rem;
+}
+.edit .rightText i {
+  padding-right: 0.2rem;
+  color: #ec3b50;
+}
