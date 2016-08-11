@@ -1,0 +1,159 @@
+@import url('./comment.less');
+// 头部
+.header {
+    .iconfont {
+        .px2px(12px);
+    }
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.order{
+	width: 100%;
+	height: 1.92rem;
+	overflow: hidden;
+	border-bottom: 1px solid @borderColor;
+	background: #fff;
+	padding: 0 0.373333rem;
+	p{
+		line-height: 0.62rem;
+		color: #777;
+		.px2px(14px);
+		span{
+			padding-left: 0.2rem;
+			color: @textColor;
+		}
+		.price{
+			color: @mainColor;
+		}
+	}
+	
+
+	.orderNumber{
+		margin-top: 0.3rem; 
+		span{
+			padding-left: 0.2rem;
+		}
+	}
+}
+
+.orderSuccess{
+	height: 3.2rem;
+	border-top: 1px solid @borderColor;
+}
+.suceessImg{
+	height: 4.426667rem;
+	overflow: hidden;
+	img{
+		display: block;
+		width: 3.333333rem;
+		height: 3.333333rem;
+		margin: 0.64rem auto 0 auto; 
+	}
+}
+
+.pay-tiltle{
+	font-weight: normal;
+	.px2px(14px);
+	padding: 0 28px;
+	line-height: 0.986667rem;
+}
+.payList{
+	background: #fff;
+	li{
+		height: 1.173333rem;
+		position: relative;
+		clear: both;
+		.iconfont{
+			position: absolute;
+			.px2px(16px);
+			top: 50%;
+			left: 0.533333rem;
+			margin-top: -10px;
+		}
+		p{
+			width: 8.48rem;
+			border-bottom: 1px solid @borderColor;
+			height: 100%;
+			float: right;
+			line-height: 1.173333rem;
+			.px2px(14px);
+		}
+	}
+}
+
+.popupBox{
+	position: absolute;
+	width: 100%;
+	top: 1.2933rem;
+	bottom: 0;
+	background: rgba(0,0, 0, 0.8);
+	z-index: 2;
+	.popup{
+		width: 7.76rem;
+		height: 6.08rem;
+		position: absolute;
+		top: 50%;
+		margin-top: -3.04rem;
+		left: 50%;
+		margin-left: -3.88rem;
+		background: #fff;
+		border-radius: 10px;
+		.phead{
+			height: 1.173333rem;
+			line-height: 1.173333rem;
+			.px2px(14px);
+			padding-left: 0.4rem;
+			border-bottom: 1px solid @borderColor;
+		}
+		.hbody{
+			overflow: hidden;
+			width: 100%;
+			input{
+				width: 6.4rem;
+				height: 1.106667rem;
+				border: 1px solid @borderColor;
+				border-radius: 10px;
+				margin: 1.0rem auto;
+				display: block;
+				.px2px(14px);
+			} 
+		}
+		.hfood{
+			overflow: hidden;
+			span{
+				display: block;
+				float: left;
+				width: 3.16rem;
+				height: 1.066667rem;
+				text-align: center;
+				line-height: 1.066667rem;
+				color: #fff;
+				border-radius: 10px;
+			}
+			.sure{
+				background: @mainColor;
+				margin-left: 0.6rem;
+			}
+			.cancel{
+				background: #9f9f9f;
+				margin-left: 0.266667rem;
+			}
+		}
+	}
+}
+
+.logInBtn {
+    height: 1.066667rem;
+    width: 9.28rem;
+    background: @mainColor;
+    text-align: center;
+    line-height: 1.066667rem;
+    color: #fff;
+    margin: 0.4rem auto;
+    .px2px(14px);
+    border-radius: 6px;
+}

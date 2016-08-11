@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+input {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+body {
+  font-family: Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+  background: #f5f5f5;
+  color: #333333;
+}
+input,
+textarea {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  text-indent: 10px;
+}
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+}
+.padded {
+  padding: 0 0.373333rem;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:before {
+  display: table;
+  content: ' ';
+}
+.clearfix:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cHeader {
+  background: #ec3b50;
+  height: 1.293333rem;
+  width: 100%;
+}
+.cHeader .iconfont {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.293333rem;
+}
+[data-dpr="2"] .cHeader .iconfont {
+  font-size: 24px;
+}
+[data-dpr="3"] .cHeader .iconfont {
+  font-size: 36px;
+}
+.cHeader .tiltle {
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  line-height: 1.293333rem;
+  top: 0;
+  font-size: 16px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+[data-dpr="2"] .cHeader .tiltle {
+  font-size: 32px;
+}
+[data-dpr="3"] .cHeader .tiltle {
+  font-size: 48px;
+}
+.header .iconfont {
+  font-size: 12px;
+}
+[data-dpr="2"] .header .iconfont {
+  font-size: 24px;
+}
+[data-dpr="3"] .header .iconfont {
+  font-size: 36px;
+}
+.container {
+  width: 100%;
+  position: absolute;
+  top: 1.2933rem;
+  bottom: 1.3rem;
+  overflow: auto;
+}
+.mhead {
+  display: block;
+  width: 100%;
+  height: 5.333333rem;
+  background: url('../imgs/mybg.png') no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+}
+.mhead .himg {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: 0.573333rem;
+}
+.mhead .himg img {
+  width: 1.893333rem;
+  height: 1.893333rem;
+  border-radius: 50%;
+}
+.mhead .himg p {
+  line-height: 0.8rem;
+}
+.mhead .shopInfo {
+  width: 100%;
+  height: 1.68rem;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  clear: both;
+}
+.mhead .shopInfo > div {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  font-size: 14px;
+  line-height: 0.6rem;
+}
+[data-dpr="2"] .mhead .shopInfo > div {
+  font-size: 28px;
+}
+[data-dpr="3"] .mhead .shopInfo > div {
+  font-size: 42px;
+}
+.mhead .shopInfo > div h4 {
+  padding-top: 0.2rem;
+}
+.myOrder {
+  height: 1.146667rem;
+  background: #fff;
+  padding: 0 0.373333rem;
+  line-height: 1.146667rem;
+  margin-top: 0.373333rem;
+  border-top: 1px solid #d9d9d9;
+}
+.list {
+  overflow: hidden;
+  height: 2rem;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  padding: 0.6rem 0;
+}
+.list li {
+  width: 20%;
+  float: left;
+  text-align: center;
+  position: relative;
+}
+.list li span {
+  font-size: 16px;
+  color: #9799a2;
+}
+[data-dpr="2"] .list li span {
+  font-size: 32px;
+}
+[data-dpr="3"] .list li span {
+  font-size: 48px;
+}
+.list li i {
+  display: block;
+  width: 0.533333rem;
+  height: 0.533333rem;
+  border-radius: 50%;
+  border: 1px solid #ec3b50;
+  position: absolute;
+  left: 50%;
+  margin-left: 10px;
+  top: -0.373333rem;
+  text-align: center;
+  line-height: 0.533333rem;
+  background: #fff;
+}
+.list li p {
+  padding-top: 0.1rem;
+}
+.logInBtn {
+  height: 1.066667rem;
+  width: 9.28rem;
+  background: #ec3b50;
+  text-align: center;
+  line-height: 1.066667rem;
+  color: #fff;
+  margin: 0.4rem auto;
+  font-size: 14px;
+  border-radius: 6px;
+}
+[data-dpr="2"] .logInBtn {
+  font-size: 28px;
+}
+[data-dpr="3"] .logInBtn {
+  font-size: 42px;
+}
+.foot-nav {
+  position: absolute;
+  height: 1.226667rem;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-top: 1px solid #d9d9d9;
+}
+.foot-nav a {
+  display: block;
+  width: 25%;
+  float: left;
+  text-align: center;
+  color: #333333;
+}
+.foot-nav a span {
+  font-size: 16px;
+  display: inline-block;
+  padding-top: 0.133333rem;
+}
+[data-dpr="2"] .foot-nav a span {
+  font-size: 32px;
+}
+[data-dpr="3"] .foot-nav a span {
+  font-size: 48px;
+}
+.foot-nav a p {
+  line-height: 0.4rem;
+}
+.foot-nav a.active {
+  color: #ec3b50;
+}
