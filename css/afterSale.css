@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+input {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+i {
+  font-style: normal;
+}
+body {
+  font-family: Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+  background: #f5f5f5;
+  color: #333333;
+}
+input,
+textarea {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  text-indent: 10px;
+}
+a,
+input,
+textarea {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+  text-decoration: none;
+}
+.padded {
+  padding: 0 0.373333rem;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix {
+  clear: both;
+}
+.clearfix:before {
+  display: table;
+  content: ' ';
+}
+.clearfix:after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.cHeader {
+  background: #ec3b50;
+  height: 1.293333rem;
+  width: 100%;
+}
+.cHeader .iconfont {
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.293333rem;
+}
+[data-dpr="2"] .cHeader .iconfont {
+  font-size: 24px;
+}
+[data-dpr="3"] .cHeader .iconfont {
+  font-size: 36px;
+}
+.cHeader .tiltle {
+  text-align: center;
+  position: absolute;
+  width: 80%;
+  left: 10%;
+  line-height: 1.293333rem;
+  top: 0;
+  font-size: 16px;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+[data-dpr="2"] .cHeader .tiltle {
+  font-size: 32px;
+}
+[data-dpr="3"] .cHeader .tiltle {
+  font-size: 48px;
+}
+.header {
+  position: absolute;
+  top: 0;
+}
+.container {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  padding-top: 1.3rem;
+}
+.shop {
+  background: #fff;
+  margin-top: 0.266667rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+.shop .title {
+  line-height: 1.226667rem;
+  padding: 0 0.373333rem;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  font-size: 14px;
+}
+[data-dpr="2"] .shop .title {
+  font-size: 28px;
+}
+[data-dpr="3"] .shop .title {
+  font-size: 42px;
+}
+.shop .title .status {
+  color: #ec3b50;
+  font-weight: normal;
+  font-size: 12px;
+}
+[data-dpr="2"] .shop .title .status {
+  font-size: 24px;
+}
+[data-dpr="3"] .shop .title .status {
+  font-size: 36px;
+}
+.shop .shop-content {
+  padding: 0.453333rem 0.373333rem;
+}
+.shop .shop-content img {
+  float: left;
+  width: 1.68rem;
+  height: 1.68rem;
+}
+.shop .shop-content .shop-title {
+  float: left;
+  width: 4.64rem;
+  height: 1.68rem;
+  overflow: hidden;
+  margin-left: 0.266667rem;
+}
+.shop .shop-content .shop-price {
+  float: right;
+  text-align: right;
+}
+.shop .shop-content .shop-price span {
+  display: block;
+}
+.shop .shop-content .shop-price i {
+  display: block;
+  color: #777;
+}
+.shop .total {
+  height: 1.146667rem;
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  line-height: 1.146667rem;
+  padding: 0 0.373333rem;
+  text-align: right;
+}
+.shop .total .price {
+  color: #ec3b50;
+}
+.shop .btnBox {
+  position: relative;
+  height: 1.6rem;
+  border-bottom: 1px solid #d9d9d9;
+}
+.shop .btnBox span {
+  width: 2.466667rem;
+  height: 0.8rem;
+  border: 1px solid #ec3b50;
+  border-radius: 4px;
+  display: block;
+  position: absolute;
+  text-align: center;
+  line-height: 0.8rem;
+  color: #ec3b50;
+  top: 0.373333rem;
+  right: 0.373333rem;
+}
