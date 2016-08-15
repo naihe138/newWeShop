@@ -1,0 +1,58 @@
+
+@import url('./comment.less');
+// 头部
+.header{
+	position: absolute;
+	top: 0;
+}
+// 容器
+.container{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	padding-top: 1.3rem;
+}
+
+.logInBtn {
+    height: 1.066667rem;
+    width: 9.28rem;
+    background: @mainColor;
+    text-align: center;
+    line-height: 1.066667rem;
+    color: #fff;
+    margin: 0.4rem auto;
+    .px2px(14px);
+    border-radius: 6px;
+}
+
+.info{
+	padding: 0.373333rem;
+	background: #fff;
+	.px2px(14px);
+	.tip{
+		padding-bottom: 0.373333rem;
+		span{
+			color: @mainColor;
+			.px2px(14px);
+			padding-right: 0.133333rem;
+		}
+	}
+	h3{
+		line-height: 0.8rem;
+		span{
+			font-weight: normal;
+		}
+	}
+}
+.ditail{
+	padding: 0.373333rem;
+	background: #fff;
+	line-height: 0.666667rem;
+	color: #999ba3;
+	.px2px(14px);
+	span{
+		color: @textColor;
+		padding-left: 0.6rem;
+	}
+}
