@@ -116,6 +116,9 @@ a {
 [data-dpr="3"] .header .iconfont {
   font-size: 36px;
 }
+a {
+  color: #333333;
+}
 .container {
   width: 100%;
   position: absolute;

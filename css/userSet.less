@@ -1,0 +1,56 @@
+@import url('./comment.less');
+// 头部
+.header{
+	position: absolute;
+	top: 0;
+}
+// 容器
+.container{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	padding-top: 1.3rem;
+}
+
+.uList{
+	overflow: hidden;
+	margin-bottom: 0.366667rem;
+	background: #fff;
+	.px2px(14px);
+	li{
+		overflow: hidden;
+		a{
+			display: block;
+			color: @textColor;
+			height: 1.493333rem;
+			border-bottom: 1px solid @borderColor;
+			border-top: 1px solid @borderColor;
+			margin-top: -1px;
+			padding: 0 0.773333rem 0 0.373333rem;
+			position: relative;
+			line-height: 1.493333rem;
+			img{
+				width: 1.2rem;
+				height: 1.2rem;
+				border-radius: 50%;
+				margin-top: 0.266667rem;
+			}
+			span{
+				position: absolute;
+				right: 0.373333rem;
+			}
+			i{
+				color: @mainColor;
+			}
+			i.info{
+				color: #777777;
+			}
+		}
+		a.user{
+			height: 1.626667rem;
+			line-height: 1.626667rem;
+		}
+	}
+}
+

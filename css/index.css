@@ -296,6 +296,7 @@ a {
   display: inline-block;
   margin-right: 0.133333rem;
   color: #ec3b50;
+  font-size: 0.533333rem;
 }
 .flagship {
   width: 100%;
@@ -349,6 +350,7 @@ a {
 }
 .them .themTop img {
   width: 50%;
+  height: 2.92rem;
 }
 .them .themBottom {
   width: 100%;
@@ -356,6 +358,7 @@ a {
 }
 .them .themBottom img {
   width: 25%;
+  height: 2.92rem;
 }
 .like {
   background: #fff;

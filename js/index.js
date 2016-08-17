@@ -1,5 +1,5 @@
 $(function() {
-	var WebUrl = 'http://api.shopbymall.com/api/home';
+	var WebUrl = 'http://api.shopbymall.com/api/home/';
 	// 整个项目的初始化函数	
 	function init(){
 		// 整个容器滚动
@@ -8,7 +8,14 @@ $(function() {
 		});
 		// banner
 		banner.init();
-		
+		// 广告
+		advertisement.init();
+		// 旗舰品牌
+		brand.init();
+		// 主题市场
+		themMarkey.init();
+		// 猜你喜欢
+		youLike.init();
 	}
 	// Banner
 	var banner = (function(){
@@ -17,11 +24,9 @@ $(function() {
 		var tem = '';
 		var navTem = '';
 		function init(){
-			$.post('http://api.shopbymall.com/api/home/GetHomeBanner', function(res){
-				console.log(res);
+			$.post(WebUrl+'GetHomeBanner', function(res){
 				if(res.returnstate == 200){
 					res.returnvalue.forEach(function(item, i){
-						console.log(item);
 						tem += '<div class="swiper-slide"><img src="'+(WebUrl + item.ImgSrc)+'" onerror="javascript:this.src=\'../imgs/bb.jpg\'"></div>';
 						navTem += '<span></span>';
 					})
@@ -45,7 +50,90 @@ $(function() {
 			init: init
 		}
 	})();
-	
+	// 广告
+	var advertisement = (function(){
+		var ad = $('#ad');
+		var aA = ad.find('a');
+		var aImg = ad.find('img');
+		function init(){
+			$.post(WebUrl + 'GetHomeAd', function(res){
+				if(res.returnstate == 200) {
+					aImg.forEach(function(item, index){
+						$(item).attr('src', res.returnvalue[index].ImgSrc);
+						console.log(item, index);
+					})
+				}
+			})
+		}
+		return {
+			init: init
+		}
+	})();
+
+	// 旗舰品牌
+	var brand = (function(){
+		var flagship = $('#flagship');
+		var aA = flagship.find('a');
+		var aImg = flagship.find('img');
+		function init(){
+			$.post(WebUrl + 'GetHomeBrand', function(res){
+				if(res.returnstate == 200) {
+					aImg.forEach(function(item, index){
+						var i = index % res.returnvalue.length;
+						$(item).attr('src', res.returnvalue[i].ImgSrc);
+					})
+				}
+			})
+		}
+		return {
+			init: init
+		}
+	})();
+
+	// 主题市场
+	var themMarkey = (function(){
+		var them = $('#them');
+		var aA = them.find('a');
+		var aImg = them.find('img');
+		function init(){
+			$.post(WebUrl + 'GetHomeBrand', function(res){
+				if(res.returnstate == 200) {
+					aImg.forEach(function(item, index){
+						var i = index % res.returnvalue.length;
+						$(item).attr('src', res.returnvalue[i].ImgSrc);
+					})
+				}
+			})
+		}
+		return {
+			init: init
+		}
+	})();
+	// 猜你喜欢
+	var youLike = (function(){
+		var str = '';
+		var likeBox = $('#likeBox');
+		function init(){
+			$.post(WebUrl + 'GetHomeLike', function(res){
+				if(res.returnstate == 200) {
+					res.returnvalue.forEach(function(item, index){
+						str += '<div class="likeList">' +
+							'<a href="#">' +
+							'<img src="'+item.OriginalImage+'" alt="">' +
+							'<p>'+item.ProName+'</p>' +
+							'<span>¥<i>'+item.ShopPrice+'</i></span>' +
+							'</a>' +
+							'</div>';
+					})
+					console.log(str);
+					likeBox.append($(str));
+				}
+			})
+		}
+		return {
+			init: init
+		}
+	})();
 	// 初始化的调用
 	init();
 })

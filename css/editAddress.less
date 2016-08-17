@@ -1,0 +1,134 @@
+@import url('./comment.less');
+// 头部
+.header {
+    position: absolute;
+    top: 0;
+}
+
+// 容器
+.container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    padding-top: 1.3rem;
+}
+
+.uList {
+    overflow: hidden;
+    background: #fff;
+    .px2px(14px);
+    li {
+        overflow: hidden;
+        display: block;
+        color: @textColor;
+        height: 1.493333rem;
+        border-bottom: 1px solid @borderColor;
+        border-top: 1px solid @borderColor;
+        margin-top: -1px;
+        padding: 0 0.773333rem 0 0.373333rem;
+        position: relative;
+        line-height: 1.493333rem;
+        .title{
+        	float: left;
+        	width: 2.24rem;
+        }
+        input, .area{
+        	display: block;
+        	float: left;
+        	width: 6.533333rem;
+        	height: 100%;
+        	.px2px(14px);
+
+        }
+        .area{
+        	text-align: right;
+        }
+        span {
+            position: absolute;
+            right: 0.373333rem;
+
+        }
+        i {
+            color: @mainColor;
+        }
+        i.info {
+            color: #777777;
+        }
+    }
+}
+
+.detailAdrress{
+	background: #fff;
+    margin-bottom: 0.366667rem;
+    padding: 0.373333rem;
+    p{
+    	.px2px(14px);
+    }
+    textarea{
+    	display: block;
+    	width: 100%;
+    	padding: 0.133333rem;
+    	height: 3rem;
+    	.px2px(12px);
+    }
+}
+
+.popup{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	background: rgba(0,0,0,0.8);
+	.px2px(14px);
+	.pupopConten{
+		background: #fff;
+		width: 7.733333rem;
+		height: 7rem;
+		position: absolute;
+		left: 50%;
+		margin-left: -3.866667rem;
+		top: 2.666667rem;
+		border-radius: 0.08rem;
+		p{
+			height: 1.2rem;
+			line-height: 1.2rem;
+			padding: 0 0.373333rem;
+			clear: both;
+			border-bottom: 1px solid @borderColor;
+			.select{
+				display: block;
+				float: right;
+				width: 50%;
+				color: @mainColor;
+			}
+		}
+		.btnBox{
+			height: 2.0rem;
+			border: none;
+
+			span:nth-of-type(1){
+				width: 46%;
+				float: left;
+				background: @mainColor;
+				color: #fff;
+				text-align: center;
+				height: 1rem;
+				line-height: 1rem;
+				margin-top: 0.5rem;
+			}
+			span:nth-of-type(2){
+				width: 46%;
+				float: right;
+				background: #9f9f9f;
+				color: #fff;
+				text-align: center;
+				height: 1rem;
+				line-height: 1rem;
+				margin-top: 0.5rem;
+			}
+		}
+
+	}
+}

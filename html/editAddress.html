@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <script src="../public/flexible.js"></script>
+    <title>编辑/新增收货地址</title>
+    <link rel="stylesheet" type="text/css" href="../fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/editAddress.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header padded clearfix cHeader">
+        <span class="iconfont">&#xe600</span>
+        <h3 class="tiltle"></h3>
+        <span class="iconfont fr">保存</span>
+    </div>
+    <div class="container" id="container">
+        <ul class="uList">
+            <li class="clearfix">
+                <div class="title">收货人</div>
+                <input type="text" placeholder="填写收货人姓名" />
+                <span class="iconfont">&#xe600</span>
+            </li>
+            <li class="clearfix">
+                <div class="title">联系电话</div>
+                <input type="text" placeholder="填写收货人姓名" />
+                <span class="iconfont">&#xe600</span>
+            </li>
+            <li class="clearfix">
+                <div class="title">所在地区</div>
+                <div class="area">123453</div>
+                <span class="iconfont">&#xe600</span>
+            </li>
+        </ul>
+        <div class="detailAdrress">
+            <p>详细地址</p>
+            <textarea placeholder="填写街道, 楼道, 门牌号"></textarea>
+        </div>
+    </div>
+    <!-- 弹出框 -->
+    <div class="popup" style="display: none">
+        <div class="pupopConten">
+            <p>选择所在地区</p>
+            <p>省份<span class="select">请选择</span></p>
+            <p>城市<span class="select">请选择</span></p>
+            <p>区县<span class="select">请选择</span></p>
+            <p class="btnBox">
+                <span>确定</span>
+                <span>取消</span>
+            </p>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="../public/jquery.min.js"></script>
+<script type="text/javascript" src="../public/xscroll.js"></script>
+<script type="text/javascript" src="../public/jquery.raty.min.js"></script>
+</html>
