@@ -188,15 +188,25 @@ a {
 }
 .payList li .iconfont {
   position: absolute;
-  font-size: 16px;
+  font-size: 14px;
   top: 50%;
   left: 0.533333rem;
   margin-top: -10px;
 }
 [data-dpr="2"] .payList li .iconfont {
-  font-size: 32px;
+  font-size: 28px;
 }
 [data-dpr="3"] .payList li .iconfont {
+  font-size: 42px;
+}
+.payList li .select {
+  font-size: 16px;
+  color: #ec3b50;
+}
+[data-dpr="2"] .payList li .select {
+  font-size: 32px;
+}
+[data-dpr="3"] .payList li .select {
   font-size: 48px;
 }
 .payList li p {

@@ -79,14 +79,14 @@ a {
 }
 .cHeader .iconfont {
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.293333rem;
 }
 [data-dpr="2"] .cHeader .iconfont {
-  font-size: 24px;
+  font-size: 32px;
 }
 [data-dpr="3"] .cHeader .iconfont {
-  font-size: 36px;
+  font-size: 48px;
 }
 .cHeader .tiltle {
   text-align: center;
@@ -106,15 +106,6 @@ a {
 }
 [data-dpr="3"] .cHeader .tiltle {
   font-size: 48px;
-}
-.header .iconfont {
-  font-size: 12px;
-}
-[data-dpr="2"] .header .iconfont {
-  font-size: 24px;
-}
-[data-dpr="3"] .header .iconfont {
-  font-size: 36px;
 }
 .container {
   width: 100%;
@@ -185,6 +176,7 @@ a {
 .telmsg {
   padding-left: 0.373333rem;
   color: #333333;
+  line-height: 0.8rem;
 }
 .logInBtn {
   height: 1.066667rem;

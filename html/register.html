@@ -21,54 +21,54 @@
     <div class="container" id="container">
         <div class="navBox">
             <div class="register-nav clearfix">
-                <span class="fl active"><i class="iconfont">&#xe600</i>普通注册</span>
-                <span class="fr"><i class="iconfont">&#xe600</i>手机注册</span>
+                <span class="fl active"><i class="iconfont">&#xe612;</i>普通注册</span>
+                <span class="fr"><i class="iconfont">&#xe608;</i>手机注册</span>
             </div>
         </div>
         <div class="normalReg">
             <div class="logForm">
                     <div class="clearfix hasBorder">
-                        <span class="iconfont">&#xe600</span>
+                        <span class="iconfont">&#xe612;</span>
                         <input type="text" name="username" placeholder="用户名"></input>
                     </div>
                     <div class="clearfix hasBorder">
-                        <span class="iconfont">&#xe600</span>
+                        <span class="iconfont">&#xe617;</span>
                         <input type="text" name="regCode" placeholder="密码"></input>
                     </div>
                     <div class="clearfix hasBorder">
-                        <span class="iconfont">&#xe600</span>
+                        <span class="iconfont">&#xe617;</span>
                         <input type="text" name="regCode" placeholder="重复密码"></input>
                     </div>
                     <div class="clearfix">
-                        <span class="iconfont">&#xe600</span>
+                        <span class="iconfont">&#xe60e;</span>
                         <input type="text" name="email" placeholder="邮箱地址"></input>
                     </div>
                 </div>
                 <div class="logInBtn">注册</div>
         </div>
-        <div class="telReg">
+        <div class="telReg" style="display: none">
             <div class="step1">
                 <div class="logForm">
                     <div class="clearfix">
-                        <span class="iconfont">&#xe600</span>
+                        <span class="iconfont">&#xe608;</span>
                         <input type="text" name="tel" placeholder="手机号"></input>
                     </div>
                     <div class="clearfix">
-                        <span class="iconfont">&#xe600</span>
+                        <span class="iconfont">&#xe60d;</span>
                         <input class="verify" type="text" name="code1" placeholder="请输入验证码"></input>
                         <p class="yanzhenma yanzhengtext">发送验证码</p>
                     </div>
                 </div>
-                <div class="logInBtn">下一步</div>
+                <div class="logInBtn" id="telNextBtn">下一步</div>
             </div>
-            <div class="step2">
+            <div class="step2" style="display: none">
                 <div class="logForm">
                     <div class="clearfix">
-                        <span class="iconfont">&#xe600</span>
+                        <span class="iconfont">&#xe617;</span>
                         <input type="password" name="msgCode" placeholder="密码"></input>
                     </div>
                     <div class="clearfix">
-                        <span class="iconfont">&#xe600</span>
+                        <span class="iconfont">&#xe617;</span>
                         <input type="password" name="code2" placeholder="重复密码"></input>
                     </div>
                 </div>
@@ -77,8 +77,7 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="../js/zepto.min.js"></script>
-<script type="text/javascript" src="../js/xscroll.js"></script>
-<script type="text/javascript" src="../js/logIn.js"></script>
+<script type="text/javascript" src="../public/zepto.min.js"></script>
+<script type="text/javascript" src="../js/register.js"></script>
 
 </html>

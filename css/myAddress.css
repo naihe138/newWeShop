@@ -166,6 +166,9 @@ a {
   height: 1.146667rem;
   line-height: 1.146667rem;
 }
+.edit span {
+  font-size: 0.4rem;
+}
 .edit .rightText {
   float: right;
   color: #777;
@@ -179,4 +182,5 @@ a {
 .edit .rightText i {
   padding-right: 0.2rem;
   color: #ec3b50;
+  font-size: 0.4rem;
 }

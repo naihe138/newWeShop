@@ -1,11 +1,12 @@
 $(function() {
 	var WebUrl = 'http://api.shopbymall.com/api/home/';
+	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 	// 整个项目的初始化函数	
 	function init(){
 		// 整个容器滚动
-		new xScroll({
-		    el:'#container'
-		});
+		setTimeout(function(){
+			new IScroll('#wrapper', { mouseWheel: true });
+		}, 200);
 		// banner
 		banner.init();
 		// 广告

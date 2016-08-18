@@ -6,7 +6,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
     <meta content="telephone=no,email=no" name="format-detection">
-    <script src="../js/flexible.js"></script>
+    <script src="../public/flexible.js"></script>
     <title>商品详情</title>
     <link rel="stylesheet" type="text/css" href="../css/idangerous.swiper.css">
     <link rel="stylesheet" type="text/css" href="../css/shopDetail.css">
@@ -16,96 +16,98 @@
 <body>
     <!-- 头部 -->
     <div class="header padded clearfix cHeader">
-        <span class="shezhi iconfont">&#xe600</span>
+        <span class="shezhi iconfont">&#xe604;</span>
         <h3 class="tiltle">商品详情</h3>
     </div>
     <div class="container" id="container">
-        <!-- banner -->
-        <div class="banner">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="../imgs/bb.jpg">
+        <div id="wrapper">
+            <div id="scroller">
+                <!-- banner -->
+                <div class="banner">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../imgs/bb.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../imgs/slider1-1.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../imgs/slider1-2.png">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../imgs/slider1-1.png">
+                            </div>
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../imgs/slider1-1.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../imgs/slider1-2.png">
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="../imgs/slider1-1.png">
-                    </div>
-                </div>
-            </div>
-            <div class="banner-nav">
-                <span class="active"></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-        <!-- text -->
-        <div class="shopText clearfix">
-            <div class="fl shopTitle">
-                <p>魅族 PRO6 32GB 全网通公开版 银色 移动联通电信4G手机 双卡双待</p>
-                <div class="market clearfix">
-                    <span class="fl pr">¥2299.00</span>
-                    <span class="fr">市场价:¥2299.00</span>
-                </div>
-                <div class="store clearfix">
-                    <span class="fl">库存100件</span>
-                    <span class="fr">销量:2299</span>
-                </div>
-            </div>
-            <div class="fr collection">
-                <span class="iconfont">&#xe600</span>
-                <p>收藏</p>
-            </div>
-        </div>
-        <!-- 评价 -->
-        <div class="evaluate">
-            <div class="shopName clearfix">
-                <img class="fl shopImg" src="../imgs/shopName.png">
-                <div class="shop fl">
-                    <h4>信心手机铺</h4>
-                    <p>好评率: <span>95%</span></p>
-                    <span class="iconfont">&#xe600</span>
-                </div>
-                <div class="evaluate-value clearfix">
-                    <div class="evaluate-item">
-                        <p>商品相符</p>
-                        <p class="point">4.8</p>
-                    </div>
-                    <div class="evaluate-item">
-                        <p>商品相符</p>
-                        <p class="point">4.8</p>
-                    </div>
-                    <div class="evaluate-item">
-                        <p>商品相符</p>
-                        <p class="point">4.8</p>
+                    <div class="banner-nav">
+                        <span class="active"></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- 评论 -->
-        <div class="comment">
-            <div class="mtitle clearfix">
-                <span class="iconfont fIcon">&#xe600</span>
-                商品评论
-                <span class="iconfont fr">&#xe600</span>
-            </div>
-        </div>
-         <!-- 图文详情 -->
-        <div class="pageDtail">
-            <div class="mtitle clearfix">
-                <span class="iconfont fIcon">&#xe600</span>
-                图文详情
-                <span class="iconfont fr">&#xe600</span>
-            </div>
-            <div class="pageConten">
-                <p>2524163543</p>
-                <img src="../imgs/shoplist.png">
+                <!-- text -->
+                <div class="shopText clearfix">
+                    <div class="fl shopTitle">
+                        <p>魅族 PRO6 32GB 全网通公开版 银色 移动联通电信4G手机 双卡双待</p>
+                        <div class="market clearfix">
+                            <span class="fl pr">¥2299.00</span>
+                            <span class="fr">市场价:¥2299.00</span>
+                        </div>
+                        <div class="store clearfix">
+                            <span class="fl">库存100件</span>
+                            <span class="fr">销量:2299</span>
+                        </div>
+                    </div>
+                    <div class="fr collection">
+                        <span class="iconfont">&#xe60b;</span>
+                        <p>收藏</p>
+                    </div>
+                </div>
+                <!-- 评价 -->
+                <div class="evaluate">
+                    <div class="shopName clearfix">
+                        <img class="fl shopImg" src="../imgs/shopName.png">
+                        <div class="shop fl">
+                            <h4>信心手机铺</h4>
+                            <p>好评率: <span>95%</span></p>
+                            <span class="iconfont">&#xe60a;</span>
+                        </div>
+                        <div class="evaluate-value clearfix">
+                            <div class="evaluate-item">
+                                <p>商品相符</p>
+                                <p class="point">4.8</p>
+                            </div>
+                            <div class="evaluate-item">
+                                <p>商品相符</p>
+                                <p class="point">4.8</p>
+                            </div>
+                            <div class="evaluate-item">
+                                <p>商品相符</p>
+                                <p class="point">4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 评论 -->
+                <div class="comment">
+                    <div class="mtitle clearfix">
+                        <span class="iconfont fIcon">&#xe600</span> 商品评论
+                        <span class="iconfont fr">&#xe60a;</span>
+                    </div>
+                </div>
+                <!-- 图文详情 -->
+                <div class="pageDtail">
+                    <div class="mtitle clearfix">
+                        <span class="iconfont fIcon">&#xe600</span> 图文详情
+                        <span class="iconfont fr">&#xe60a;</span>
+                    </div>
+                    <div class="pageConten">
+                        <p>2524163543</p>
+                        <img src="../imgs/shoplist.png">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -177,9 +179,9 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="../js/zepto.min.js"></script>
-<script type="text/javascript" src="../js/idangerous.swiper.js"></script>
-<script type="text/javascript" src="../js/xscroll.js"></script>
-<script type="text/javascript" src="../js/index.js"></script>
+<script type="text/javascript" src="../public/zepto.min.js"></script>
+<script type="text/javascript" src="../public/idangerous.swiper.js"></script>
+<script type="text/javascript" src="../public/iscroll.js"></script>
+<script type="text/javascript" src="../js/shopDetail.js"></script>
 
 </html>

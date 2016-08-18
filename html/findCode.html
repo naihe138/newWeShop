@@ -6,7 +6,7 @@
     <meta content="yes" name="apple-mobile-web-app-capable">
     <meta content="yes" name="apple-touch-fullscreen">
     <meta content="telephone=no,email=no" name="format-detection">
-    <script src="../js/flexible.js"></script>
+    <script src="../public/flexible.js"></script>
     <title>找回密码</title>
     <link rel="stylesheet" type="text/css" href="../fonts/iconfont.css">
     <link rel="stylesheet" type="text/css" href="../css/logIn.css">
@@ -15,33 +15,33 @@
 <body>
     <!-- 头部 -->
     <div class="header padded clearfix cHeader">
-        <span class="iconfont">&#xe600</span>
+        <span class="iconfont">&#xe604;</span>
         <h3 class="tiltle">找回密码</h3>
     </div>
     <div class="container" id="container">
         <div class="step1">
             <div class="logForm">
                 <div class="clearfix">
-                    <span class="iconfont">&#xe600</span>
+                    <span class="iconfont">&#xe608;</span>
                     <input type="text" name="tel" placeholder="手机号"></input>
                 </div>
                 <div class="clearfix">
-                    <span class="iconfont">&#xe600</span>
+                    <span class="iconfont">&#xe60d;</span>
                     <input class="verify" type="text" name="code1" placeholder="请输入验证码"></input>
                     <img class="yanzhenma" src="../imgs/yanzhenma.png">
                 </div>
             </div>
-            <div class="logInBtn">下一步</div>
+            <div class="logInBtn" id="step1-btn">下一步</div>
         </div>
-        <div class="step2">
-            <p class="telmsg">输入手机号1333333333收到的短信验证码</p>
+        <div class="step2" style="display: none">
+            <p class="telmsg">输入手机号<span>1333333333</span>收到的短信验证码</p>
             <div class="logForm logForm2">
                 <div class="clearfix">
-                    <span class="iconfont">&#xe600</span>
+                    <span class="iconfont">&#xe615;</span>
                     <input type="text" name="msgCode" placeholder="短信验证码"></input>
                 </div>
                 <div class="clearfix">
-                    <span class="iconfont">&#xe600</span>
+                    <span class="iconfont">&#xe60d;</span>
                     <input class="verify" type="text" name="code2" placeholder="请输入验证码"></input>
                     <img class="yanzhenma" src="../imgs/yanzhenma.png">
                 </div>
@@ -50,8 +50,7 @@
         </div>
     </div>
 </body>
-<script type="text/javascript" src="../js/zepto.min.js"></script>
-<script type="text/javascript" src="../js/xscroll.js"></script>
-<script type="text/javascript" src="../js/logIn.js"></script>
-
+<script type="text/javascript" src="../public/zepto.min.js"></script>
+<script type="text/javascript" src="../public/xscroll.js"></script>
+<script type="text/javascript" src="../js/findCode.js"></script>
 </html>

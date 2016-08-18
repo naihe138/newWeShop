@@ -79,14 +79,14 @@ a {
 }
 .cHeader .iconfont {
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.293333rem;
 }
 [data-dpr="2"] .cHeader .iconfont {
-  font-size: 24px;
+  font-size: 32px;
 }
 [data-dpr="3"] .cHeader .iconfont {
-  font-size: 36px;
+  font-size: 48px;
 }
 .cHeader .tiltle {
   text-align: center;
@@ -150,9 +150,8 @@ a {
 .container {
   position: absolute;
   width: 100%;
-  top: 0;
+  top: 1.3rem;
   bottom: 0;
-  padding-top: 1.3rem;
 }
 .shop {
   background: #fff;
@@ -251,7 +250,7 @@ a {
   display: block;
   position: absolute;
   text-align: center;
-  line-height: 0.8rem;
+  line-height: 0.7rem;
   color: #ec3b50;
   top: 0.373333rem;
   right: 0.373333rem;
@@ -260,4 +259,34 @@ a {
   right: 3rem;
   background: #ec3b50;
   color: #fff;
+}
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+#scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
 }

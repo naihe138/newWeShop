@@ -79,14 +79,14 @@ a {
 }
 .cHeader .iconfont {
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.293333rem;
 }
 [data-dpr="2"] .cHeader .iconfont {
-  font-size: 24px;
+  font-size: 32px;
 }
 [data-dpr="3"] .cHeader .iconfont {
-  font-size: 36px;
+  font-size: 48px;
 }
 .cHeader .tiltle {
   text-align: center;
@@ -204,4 +204,14 @@ a {
   clear: both;
   padding: 0 0.373333rem;
   height: 0.8rem;
+  line-height: 0.8rem;
+}
+.shopStart > div .iconfont {
+  font-size: 16px;
+}
+[data-dpr="2"] .shopStart > div .iconfont {
+  font-size: 32px;
+}
+[data-dpr="3"] .shopStart > div .iconfont {
+  font-size: 48px;
 }
