@@ -17,24 +17,54 @@
     <div class="header padded clearfix cHeader">
         <span class="iconfont">取消</span>
         <h3 class="tiltle">登录</h3>
-        <span class="iconfont fr">注册</span>
+        <span class="iconfont fr"><a href="register.html">注册</a></span>
     </div>
     <div class="container" id="container">
         <img class="logImg" src="../imgs/login.png" alt="">
         <div class="logForm">
             <div>
                 <span class="iconfont">&#xe612;</span>
-                <input type="text" name="username" placeholder="手机/用户名/邮箱"></input>
+                <input id="username" type="text" name="username" placeholder="手机/用户名/邮箱">
             </div>
             <div>
                 <span class="iconfont">&#xe617;</span>
-                <input type="password" name="username" placeholder="请输入密码"></input>
+                <input id="password" type="password" name="username" placeholder="请输入密码">
             </div>
         </div>
         <div class="logInBtn">登录</div>
         <a class="findCode" href="#">找回密码</a>
     </div>
 </body>
-<script type="text/javascript" src="../js/zepto.min.js"></script>
-
+<script type="text/javascript" src="../public/zepto.min.js"></script>
+<script>
+    $(function(){
+        $('.logInBtn').on('touchstart', function(){
+            var username = $('#username').val();
+            var password = $('#password').val();
+            if(username == ''){
+                alert('请填写用户名!');
+                return;
+            }
+            if(password == ''){
+                alert('请填写用密码!');
+                return;
+            }
+            $.post('http://api.shopbymall.com/API/Member/GetMemberLogin', {
+                username: username,
+                userpwd: password
+            }, function(res){
+                console.log(res);
+                if(res.returnstate == 200) {
+                    window.location.href = 'index.html';
+                }
+                if(res.returnstate == 202) {
+                    alert('用户未注册,请赶快去注册吧!');
+                }
+                if(res.returnstate == 203) {
+                    alert('密码错误!');
+                }
+            })
+        })
+    })
+</script>
 </html>

@@ -107,6 +107,9 @@ a {
 [data-dpr="3"] .cHeader .tiltle {
   font-size: 48px;
 }
+.cHeader a {
+  color: #fff;
+}
 .header {
   background: #ec3b50;
   height: 1.293333rem;

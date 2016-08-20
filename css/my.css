@@ -79,14 +79,14 @@ a {
 }
 .cHeader .iconfont {
   color: #fff;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.293333rem;
 }
 [data-dpr="2"] .cHeader .iconfont {
-  font-size: 24px;
+  font-size: 32px;
 }
 [data-dpr="3"] .cHeader .iconfont {
-  font-size: 36px;
+  font-size: 48px;
 }
 .cHeader .tiltle {
   text-align: center;
@@ -106,6 +106,9 @@ a {
 }
 [data-dpr="3"] .cHeader .tiltle {
   font-size: 48px;
+}
+.cHeader a {
+  color: #fff;
 }
 .header .iconfont {
   font-size: 12px;
