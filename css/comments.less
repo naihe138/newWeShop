@@ -1,0 +1,110 @@
+@import url('./comment.less');
+// 头部
+.header{
+  background: @mainColor;
+  height: 1.293333rem;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  .serch{
+    height: 0.88rem;
+    width: 8.36rem;
+    float: right;
+    margin-top: 0.2rem;
+    border-radius: 0.106667rem;
+    .px2px(16px);
+    text-indent: 0.133333rem;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+  }
+  .shezhi{
+    color: #fff;
+    font-size: 0.533333rem;
+    line-height: 1.293333rem;
+  }
+
+}
+// 容器
+.container{
+  position: absolute;
+  width: 100%;
+  top: 1.3rem;
+  bottom: 0;
+}
+.list{
+  width: 100%;
+  padding: 0.373333rem;
+  background: #ffffff;
+  border-bottom: 1px solid @borderColor;
+  margin-bottom: 0.2rem;
+  overflow: hidden;
+  .list-title{
+    height: 1.0266rem;
+    line-height: 1.0266rem;
+    img{
+      height: 1.0266rem;
+      width: 1.0266rem;
+      border-radius: 50%;
+    }
+    .name{
+      padding-left: 0.2rem;
+    }
+    .time{
+      color: #999ba3;
+    }
+  }
+  .coment-text{
+    padding-top: 0.3rem;
+    line-height: 0.5333rem;
+  }
+  .startBox{
+    margin-top: 0.2rem;
+    height: 0.56rem;
+    span{
+      width: 0.4533rem;
+      height: 0.4533rem;
+      background-image: url("../imgs/sstart.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      float: left;
+      margin-right: 0.1rem;
+    }
+    span.active{
+      background-image: url("../imgs/bstart.png");
+    }
+  }
+}
+
+#wrapper {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+#scroller {
+  position: absolute;
+  z-index: 1;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  width: 100%;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+}
