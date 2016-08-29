@@ -38,7 +38,7 @@
                 <p>预付款</p>
             </li>
         </ul>
-        <div class="logInBtn">去支付</div>
+        <div class="logInBtn" id="toPay">去支付</div>
     </div>
     <!-- 弹出框 -->
     <div class="popupBox" style="display: none">
@@ -63,6 +63,16 @@
         aLi.on('touchstart', function(){
             aSpan.html('&#xe61c;').removeClass('select');
             aSpan.eq($(this).index()).html('&#xe61b;').addClass('select');
+        })
+        $('#toPay').on('touchstart', function(){
+            $('.popupBox').show();
+        })
+        $('.sure').on('touchstart', function(){
+            $('.popupBox').hide();
+            window.location.href='./paySuccess.html';
+        })
+        $('.cancel').on('touchstart', function(){
+            $('.popupBox').hide();
         })
     })
 </script>

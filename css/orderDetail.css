@@ -27,7 +27,7 @@ i {
   font-style: normal;
 }
 body {
-  font-family: Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+  font-family: Tahoma, Arial, Roboto, "微软雅黑", "Microsoft YaHei", "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
   background: #f5f5f5;
   color: #333333;
 }
@@ -212,11 +212,11 @@ a {
   line-height: 0.586667rem;
 }
 .logistics-info > div .title {
-  width: 1.786667rem;
+  width: 1.986667rem;
   padding-right: 0.266667rem;
 }
 .logistics-info > div .scontent {
-  width: 7.453333rem;
+  width: 6.453333rem;
 }
 .accept {
   overflow: hidden;

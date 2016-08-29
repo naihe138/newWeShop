@@ -97,12 +97,25 @@
 			padding: 0 0.373333rem;
 			clear: both;
 			border-bottom: 1px solid @borderColor;
-			.select{
+			position: relative;
+			.selectText{
 				display: block;
 				float: right;
-				width: 50%;
+				width: 60%;
 				color: @mainColor;
 			}
+			select{
+				display: block;
+				width: 60%;
+				height: 100%;
+				position: absolute;
+				right: 0;
+				top: 0;
+				background: red;
+				opacity: 0;
+				z-index: 1;
+			}
+
 		}
 		.btnBox{
 			height: 2.0rem;

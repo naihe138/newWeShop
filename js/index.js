@@ -1,12 +1,11 @@
 $(function() {
 	var WebUrl = 'http://api.shopbymall.com/api/home/';
 	document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+	var iScroll = null;
 	// 整个项目的初始化函数	
 	function init(){
 		// 整个容器滚动
-		setTimeout(function(){
-			new IScroll('#wrapper', { mouseWheel: true });
-		}, 200);
+		iScroll = new IScroll('#wrapper', { mouseWheel: true });
 		// banner
 		banner.init();
 		// 广告
@@ -24,6 +23,7 @@ $(function() {
 		var nav = $('.banner-nav');
 		var tem = '';
 		var navTem = '';
+		var inow = 0;
 		function init(){
 			$.post(WebUrl+'GetHomeBanner', function(res){
 				if(res.returnstate == 200){
@@ -34,17 +34,25 @@ $(function() {
 				}
 				bannerBox.append($(tem));
 				nav.append($(navTem));
-				nav.find('span').eq(0).addClass('active');
+				var aSpan = nav.find('span');
+				aSpan.eq(0).addClass('active');
 				setTimeout(function(){
 					var swiper = new Swiper('.swiper-container', {
-				        loop: false,
+				        loop: true,
 				        onSlideChangeEnd: function(){
-				        	console.log(swiper.activeIndex);
-				        	nav.find('span').eq(swiper.activeIndex).addClass('active').siblings('span').removeClass('active');
+									if(swiper.activeIndex-1 == aSpan.length) {
+										inow = 0;
+									} else if(swiper.activeIndex-1 == -1){
+										inow = aSpan.length - 1;
+									}
+									else{
+										inow = swiper.activeIndex-1;
+									}
+									aSpan.eq(inow).addClass('active').siblings('span').removeClass('active');
 				        }
 				    });
 				}, 30)
-				
+				iScroll.refresh();
 			})
 		}
 		return {
@@ -125,9 +133,9 @@ $(function() {
 							'<span>¥<i>'+item.ShopPrice+'</i></span>' +
 							'</a>' +
 							'</div>';
-					})
-					console.log(str);
+					});
 					likeBox.append($(str));
+					iScroll.refresh();
 				}
 			})
 		}

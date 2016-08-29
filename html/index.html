@@ -9,162 +9,164 @@
     <script src="../public/flexible.js"></script>
     <title>首页</title>
     <link rel="stylesheet" type="text/css" href="../css/idangerous.swiper.css">
-    <link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel="stylesheet" type="text/css" href="../fonts/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
 </head>
 
 <body>
-    <!-- 头部 -->
-    <div class="header padded clearfix">
-        <span class="shezhi iconfont">&#xe600</span>
-        <input type="text" class="serch"></input>
+<!-- 头部 -->
+<div class="header padded clearfix">
+    <span class="shezhi iconfont">&#xe600</span>
+    <div class="serch">
+        <span class="iconfont">&#xe618;</span>
+        <input type="text" value="" placeholder="搜索商品">
     </div>
-    <div class="container" id="container">
-        
-        <div id="wrapper">
-            <div id="scroller">
-                 <!-- banner -->
-        <div class="banner">
-            <div class="swiper-container">
-                <div class="swiper-wrapper" id="banner">
-                    <!--<div class="swiper-slide">
-                        <img src="../imgs/bb1.jpg" onerror="javascript:this.src='../imgs/bb.jpg'">
+</div>
+<div class="container" id="container">
+    <div id="wrapper">
+        <div id="scroller">
+            <!-- banner -->
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper" id="banner">
+                        <!--<div class="swiper-slide">
+                            <img src="../imgs/bb1.jpg" onerror="javascript:this.src='../imgs/bb.jpg'">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../imgs/slider1-1.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../imgs/slider1-2.png">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../imgs/slider1-1.png">
+                        </div>-->
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../imgs/slider1-1.png">
+                </div>
+                <div class="banner-nav">
+                    <!--<span class="active"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>-->
+                </div>
+            </div>
+            <!-- 导航 -->
+            <div class="navBox padded clearfix">
+                <a class="nav-list" href="classify.html">
+                    <div>
+                        <span class="iconfont">&#xe600;</span>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../imgs/slider1-2.png">
+                    <p>分类</p>
+                </a>
+                <a class="nav-list" href="shopCar.html">
+                    <div>
+                        <span class="iconfont">&#xe603;</span>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="../imgs/slider1-1.png">
-                    </div>-->
+                    <p>购物车</p>
+                </a>
+                <a class="nav-list" href="shop.html">
+                    <div>
+                        <span class="iconfont">&#xe61d;</span>
+                    </div>
+                    <p>我的商场</p>
+                </a>
+                <a class="nav-list" href="daySignIn.html">
+                    <div>
+                        <span class="iconfont">&#xe61f;</span>
+                    </div>
+                    <p>每日签到</p>
+                </a>
+            </div>
+            <!-- 广告 -->
+            <div class="ad clearfix" id="ad">
+                <div class="imgLeft fl">
+                    <a href="#"><img src="../imgs/04首页-第一屏_02.png"></a>
+                    <a href="#"><img src="../imgs/04首页-第一屏_07.png"></a>
+                </div>
+                <div class="imgRight fr">
+                    <a href="#"><img src="../imgs/04首页-第一屏_05.png"></a>
                 </div>
             </div>
-            <div class="banner-nav">
-                <!--<span class="active"></span>
-                <span></span>
-                <span></span>
-                <span></span>-->
-            </div>
-        </div>
-        <!-- 导航 -->
-        <div class="navBox padded clearfix">
-            <a class="nav-list" href="classify.html">
-                <div>
-                    <span class="iconfont">&#xe600;</span>
+            <!-- 旗舰品牌 -->
+            <div class="flagship clearfix" id="flagship">
+                <div class="index-title">
+                    <span class="iconfont">&#xe62a;</span>旗舰品牌
                 </div>
-                <p>分类</p>
-            </a>
-            <a class="nav-list" href="shopCar.html">
-                <div>
-                    <span class="iconfont">&#xe603;</span>
+                <div class="ship clearfix">
+                    <div class="shipBig fl">
+                        <a href="#"><img src="../imgs/04首页-完整_02.png"></a>
+                    </div>
+                    <div class="shipLittle fl">
+                        <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
+                        <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
+                        <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
+                    </div>
                 </div>
-                <p>购物车</p>
-            </a>
-            <a class="nav-list" href="shop.html">
-                <div>
-                    <span class="iconfont">&#xe61d;</span>
-                </div>
-                <p>我的商场</p>
-            </a>
-            <a class="nav-list" href="daySignIn.html">
-                <div>
-                    <span class="iconfont">&#xe61f;</span>
-                </div>
-                <p>每日签到</p>
-            </a>
-        </div>
-        <!-- 广告 -->
-        <div class="ad clearfix" id="ad">
-            <div class="imgLeft fl">
-                <a href="#"><img src="../imgs/04首页-第一屏_02.png"></a>
-                <a href="#"><img src="../imgs/04首页-第一屏_07.png"></a>
-            </div>
-            <div class="imgRight fr">
-                <a href="#"><img src="../imgs/04首页-第一屏_05.png"></a>
-            </div>
-        </div>
-        <!-- 旗舰品牌 -->
-        <div class="flagship clearfix" id="flagship">
-            <div class="index-title">
-                <span class="iconfont">&#xe62a;</span>旗舰品牌
-            </div>
-            <div class="ship clearfix">
-                <div class="shipBig fl">
-                    <a href="#"><img src="../imgs/04首页-完整_02.png"></a>
-                </div>
-                <div class="shipLittle fl">
-                    <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
-                    <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
-                    <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
+                <div class="ship clearfix">
+                    <div class="shipBig fl">
+                        <a href="#"><img src="../imgs/04首页-完整_02.png"></a>
+                    </div>
+                    <div class="shipLittle fl">
+                        <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
+                        <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
+                        <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
+                    </div>
                 </div>
             </div>
-            <div class="ship clearfix">
-                <div class="shipBig fl">
-                    <a href="#"><img src="../imgs/04首页-完整_02.png"></a>
+            <!-- 主题市场 -->
+            <div class="them clearfix" id="them">
+                <div class="index-title">
+                    <span class="iconfont">&#xe62a;</span>主题市场
                 </div>
-                <div class="shipLittle fl">
-                    <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
-                    <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
-                    <a href="#"><img src="../imgs/04首页-完整_04.png"></a>
+                <div class="themTop">
+                    <a href=""><img src="../imgs/them01.png"></a>
+                    <a href=""><img src="../imgs/them01.png"></a>
+                </div>
+                <div class="themBottom">
+                    <a href=""><img src="../imgs/them03.png"></a>
+                    <a href=""><img src="../imgs/them03.png"></a>
+                    <a href=""><img src="../imgs/them03.png"></a>
+                    <a href=""><img src="../imgs/them03.png"></a>
                 </div>
             </div>
-        </div>
-        <!-- 主题市场 -->
-        <div class="them clearfix" id="them">
-            <div class="index-title">
-                <span class="iconfont">&#xe62a;</span>主题市场
-            </div>
-            <div class="themTop">
-                <a href=""><img src="../imgs/them01.png"></a>
-                <a href=""><img src="../imgs/them01.png"></a>
-            </div>
-            <div class="themBottom">
-                <a href=""><img src="../imgs/them03.png"></a>
-                <a href=""><img src="../imgs/them03.png"></a>
-                <a href=""><img src="../imgs/them03.png"></a>
-                <a href=""><img src="../imgs/them03.png"></a>
-            </div>
-        </div>
-        <!-- 猜你喜欢 -->
-        <div class="like clearfix">
-            <div class="index-title">
-                <span class="iconfont">&#xe62a;</span>猜你喜欢
-            </div>
-            <div class="likeBox padded" id="likeBox">
-                <!--<div class="likeList">-->
+            <!-- 猜你喜欢 -->
+            <div class="like clearfix">
+                <div class="index-title">
+                    <span class="iconfont">&#xe62a;</span>猜你喜欢
+                </div>
+                <div class="likeBox padded" id="likeBox">
+                    <!--<div class="likeList">-->
                     <!--<a href="#">-->
-                        <!--<img src="../imgs/like01.png" alt="">-->
-                        <!--<p>连衣裙连衣裙连衣裙连衣裙连衣裙连衣裙连衣裙</p>-->
-                        <!--<span>¥<i>9999</i></span>-->
+                    <!--<img src="../imgs/like01.png" alt="">-->
+                    <!--<p>连衣裙连衣裙连衣裙连衣裙连衣裙连衣裙连衣裙</p>-->
+                    <!--<span>¥<i>9999</i></span>-->
                     <!--</a>-->
-                <!--</div>-->
+                    <!--</div>-->
+                </div>
             </div>
         </div>
-            </div>
-        </div>
+    </div>
 
-       
-    </div>
-    <div class="foot-nav clearfix">
-    	<a class="active" href="index.html">
-    		<span class="iconfont">&#xe61d;</span>
-    		<p>首页</p>
-    	</a>
-    	<a href="classify.html">
-    		<span class="iconfont">&#xe600;</span>
-    		<p>分类</p>
-    	</a>
-    	<a href="shopCar.html">
-    		<span class="iconfont">&#xe603;</span>
-    		<p>购物车</p>
-    	</a>
-    	<a href="my.html">
-    		<span class="iconfont">&#xe610;</span>
-    		<p>我的</p>
-    	</a>
-    </div>
+
+</div>
+<div class="foot-nav clearfix">
+    <a class="active" href="index.html">
+        <span class="iconfont">&#xe61d;</span>
+        <p>首页</p>
+    </a>
+    <a href="classify.html">
+        <span class="iconfont">&#xe600;</span>
+        <p>分类</p>
+    </a>
+    <a href="shopCar.html">
+        <span class="iconfont">&#xe603;</span>
+        <p>购物车</p>
+    </a>
+    <a href="my.html">
+        <span class="iconfont">&#xe610;</span>
+        <p>我的</p>
+    </a>
+</div>
 </body>
 <script type="text/javascript" src="../public/zepto.min.js"></script>
 <script type="text/javascript" src="../public/idangerous.swiper.js"></script>

@@ -27,7 +27,7 @@ i {
   font-style: normal;
 }
 body {
-  font-family: Tahoma, Arial, Roboto, "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+  font-family: Tahoma, Arial, Roboto, "微软雅黑", "Microsoft YaHei", "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
   background: #f5f5f5;
   color: #333333;
 }
@@ -143,6 +143,22 @@ a {
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   background: #fff;
+  position: relative;
+}
+.container .inputBox ul {
+  width: 100%;
+  overflow: hidden;
+  background: #ffffff;
+  position: absolute;
+  top: 1.133rem;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+.container .inputBox ul li {
+  line-height: 1rem;
+  padding-left: 0.173rem;
+  border-bottom: 1px solid #d9d9d9;
 }
 .container .inputBox input {
   width: 100%;
@@ -155,6 +171,12 @@ a {
 }
 [data-dpr="3"] .container .inputBox input {
   font-size: 42px;
+}
+.container .inputBox .xiala {
+  position: absolute;
+  right: 0.173rem;
+  top: 0.3rem;
+  color: #777;
 }
 .container sup {
   color: #ec3b50;

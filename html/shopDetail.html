@@ -18,6 +18,7 @@
     <div class="header padded clearfix cHeader">
         <span class="shezhi iconfont">&#xe604;</span>
         <h3 class="tiltle">商品详情</h3>
+        <span class="fr iconfont" id="share">&#xe607;</span>
     </div>
     <div class="container" id="container">
         <div id="wrapper">
@@ -91,19 +92,19 @@
                     </div>
                 </div>
                 <!-- 评论 -->
-                <div class="comment">
+                <div class="comment" id="comment">
                     <div class="mtitle clearfix">
-                        <span class="iconfont fIcon">&#xe600</span> 商品评论
+                        <span class="iconfont fIcon">&#xe615;</span> 商品评论
                         <span class="iconfont fr">&#xe60a;</span>
                     </div>
                 </div>
                 <!-- 图文详情 -->
-                <div class="pageDtail">
+                <div class="pageDtail" id="pageDtail">
                     <div class="mtitle clearfix">
-                        <span class="iconfont fIcon">&#xe600</span> 图文详情
+                        <span class="iconfont fIcon">&#xe62c;</span> 图文详情
                         <span class="iconfont fr">&#xe60a;</span>
                     </div>
-                    <div class="pageConten">
+                    <div class="pageConten" style="display: none">
                         <p>2524163543</p>
                         <img src="../imgs/shoplist.png">
                     </div>
@@ -113,13 +114,13 @@
     </div>
     <!-- 底部按钮 -->
     <div class="foot-btn clearfix">
-        <span class="sold fl">立即购买</span>
-        <span class="addCar fr">加入购物车</span>
+        <span class="sold fl" id="toSell">立即购买</span>
+        <span class="addCar fr" id="addCar">加入购物车</span>
     </div>
     <!-- 弹出购买 -->
     <div class="popupSell popup" style="display: none">
         <div class="popupConetn">
-            <div class="ptitle clearfix"><span class="iconfont fr">&#xe600</span></div>
+            <div class="ptitle clearfix"><span class="iconfont fr" id="closeSell">&#xe62b;</span></div>
             <div class="shopName clearfix">
                 <img class="fl shopImg" src="../imgs/shopName.png">
                 <div class="shop fl">
@@ -149,7 +150,7 @@
     <!-- 分享购买 -->
     <div class="popupShare popup" style="display: none">
         <div class="popupConetn">
-            <div class="ptitle clearfix"><span class="iconfont fr">&#xe600</span></div>
+            <div class="ptitle clearfix"><span class="iconfont fr" id="closeShare">&#xe62b;</span></div>
             <ul class="shareList">
                 <li>
                     <img src="../imgs/share_03.png">

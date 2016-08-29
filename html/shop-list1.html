@@ -17,7 +17,10 @@
     <!-- 头部 -->
     <div class="header padded clearfix">
         <span class="shezhi iconfont">&#xe604;</span>
-        <input type="text" class="serch"></input>
+        <div class="serch">
+            <span class="iconfont">&#xe618;</span>
+            <input type="text" value="" placeholder="搜索商品">
+        </div>
     </div>
     <div class="container" id="container">
         <div class="sort clearfix">
@@ -30,46 +33,61 @@
             <div class="sortItem">
                 <span class="iconfont">&#xe605;</span>上架时间
             </div>
-            <span class="iconfont caidan">&#xe609;</span>
+            <span class="iconfont caidan" id="tabBtn">&#xe600;</span>
         </div>
-        <ul class="list1 clearfix">
-            <li>
-                <a class="clearfix" href="#">
-                    <img src="../imgs/shoplist.png">
-                    <div class="textBox">
-                        <p class="list-title">大神大神大神大神大神大神大神大神大神大神大神大神</p>
-                        <p class="shop-title">
-                            <i class="iconfont">&#xe600</i>
-                            <span>一号铺</span>
-                        </p>
-                        <p class="price clearfix">
-                            <span class="price-detail fl">¥<i>999.00</i></span>
-                            <span class="sell fr">销量:<i>255</i></span>
-                        </p>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="clearfix" href="#">
-                    <img src="../imgs/shoplist.png">
-                    <div class="textBox">
-                        <p class="list-title">大神大神大神大神大神大神大神大神大神大神大神大神</p>
-                        <p class="shop-title">
-                            <i class="iconfont">&#xe600</i>
-                            <span>一号铺</span>
-                        </p>
-                        <p class="price clearfix">
-                            <span class="price-detail fl">¥<i>999.00</i></span>
-                            <span class="sell fr">销量:<i>255</i></span>
-                        </p>
-                    </div>
-                </a>
-            </li>
-        </ul>    
+
+        <!---->
+        <div class="wrapper" id="wrapper1">
+            <div class="scroller">
+                <ul class="list clearfix" id="list2">
+                    <!--<li>-->
+                    <!--<a href="#">-->
+                    <!--<img src="../imgs/shoplist.png">-->
+                    <!--<div class="textBox">-->
+                    <!--<p class="list-title">大神大神大神大神大神大神大神大神大神大神大神大神</p>-->
+                    <!--<p class="shop-title">-->
+                    <!--<i class="iconfont">&#xe600</i>-->
+                    <!--<span>一号铺</span>-->
+                    <!--</p>-->
+                    <!--<p class="price clearfix">-->
+                    <!--<span class="price-detail fl">¥<i>999.00</i></span>-->
+                    <!--<span class="sell fr">销量:<i>255</i></span>-->
+                    <!--</p>-->
+                    <!--</div>-->
+                    <!--</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+
+
+        <!---->
+        <div class="wrapper" id="wrapper2" style="display: none;">
+            <div class="scroller">
+                <ul class="list1 clearfix" id="list1">
+                    <!--<li>-->
+                        <!--<a class="clearfix" href="#">-->
+                            <!--<img src="../imgs/shoplist.png">-->
+                            <!--<div class="textBox">-->
+                                <!--<p class="list-title">大神大神大神大神大神大神大神大神大神大神大神大神</p>-->
+                                <!--<p class="shop-title">-->
+                                    <!--<i class="iconfont">&#xe600</i>-->
+                                    <!--<span>一号铺</span>-->
+                                <!--</p>-->
+                                <!--<p class="price clearfix">-->
+                                    <!--<span class="price-detail fl">¥<i>999.00</i></span>-->
+                                    <!--<span class="sell fr">销量:<i>255</i></span>-->
+                                <!--</p>-->
+                            <!--</div>-->
+                        <!--</a>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+        </div>
+
     </div>
 </body>
-<script type="text/javascript" src="../js/zepto.min.js"></script>
-<script type="text/javascript" src="../js/xscroll.js"></script>
-<script type="text/javascript" src="../js/index.js"></script>
-
+<script type="text/javascript" src="../public/jquery.min.js"></script>
+<script type="text/javascript" src="../public/iscroll.js"></script>
+<script type="text/javascript" src="../js/shopList.js"></script>
 </html>

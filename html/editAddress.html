@@ -31,7 +31,7 @@
             </li>
             <li class="clearfix" id="areaSelect">
                 <div class="title">所在地区</div>
-                <div class="area">123453</div>
+                <div class="area" id="area"></div>
                 <span class="iconfont">&#xe60a;</span>
             </li>
         </ul>
@@ -42,25 +42,67 @@
     </div>
     <!-- 弹出框 -->
     <div class="popup" style="display: none">
-        <div class="pupopConten">
+        <div class="pupopConten" id="city">
             <p>选择所在地区</p>
-            <p>省份<span class="select">请选择</span></p>
-            <p>城市<span class="select">请选择</span></p>
-            <p>区县<span class="select">请选择</span></p>
+            <p>省份<span class="selectText" id="provStr">请选择</span><select class="prov"></select></p>
+            <p>城市<span class="selectText" id="cityStr">请选择</span><select class="city" disabled="disabled"></select></p>
+            <p>区县<span class="selectText" id="distStr">请选择</span><select class="dist" disabled="disabled"></select></p>
             <p class="btnBox">
-                <span>确定</span>
-                <span>取消</span>
+                <span id="sure">确定</span>
+                <span id="cancel">取消</span>
             </p>
         </div>
     </div>
 </body>
-<script type="text/javascript" src="../public/zepto.min.js"></script>
+<script type="text/javascript" src="../public/jquery.min.js"></script>
+<script type="text/javascript" src="../public/jquery.cityselect.js"></script>
 <script type="text/javascript">
     $(function(){
+        var provStr = $('#provStr');
+        var cityStr = $('#cityStr');
+        var distStr = $('#distStr');
+        var prov = $('.prov');
+        var city = $('.city');
+        var dist = $('.dist');
+        var sure = $('#sure');
+        var cancel = $('#cancel');
+        var area = $('#area');
+        var selectAllText = '';
+        var t1 = '';
+        var t2 = '';
+        var t3 = '';
         $('#areaSelect').on('touchstart', function(){
             $('.popup').show();
+        });
+        $("#city").citySelect({
+            prov: provStr,
+            city: provStr,
+            dist: distStr,
+            nodata:"none"
+        });
+        prov.change(function() {
+            t1 = $(this).children('option:selected').val();
+            provStr.html($(this).children('option:selected').val());
+            t2 = '';
+            cityStr.html('请选择');
+            t3 = '请选择';
+            distStr.html('请选择');
+        });
+        city.change(function() {
+            t2 = $(this).children('option:selected').val();
+            cityStr.html($(this).children('option:selected').val());
+            t3 = '';
+            distStr.html('请选择');
+        });
+        dist.change(function() {
+            t3 = $(this).children('option:selected').val();
+            distStr.html($(this).children('option:selected').val());
+        });
+        sure.on('touchstart', function(){
+            area.html(t1 + t2 + t3);
+            $('.popup').hide();
         })
-        $('.popup').on('touchstart', function(){
+        cancel.on('touchstart', function(){
             $('.popup').hide();
         })
     })
