@@ -5,7 +5,7 @@ $(function() {
 	// 整个项目的初始化函数	
 	function init(){
 		// 整个容器滚动
-		iScroll = new IScroll('#wrapper', { mouseWheel: true });
+		iScroll = new IScroll('#wrapper', { mouseWheel: true, click: true });
 		// banner
 		banner.init();
 		// 广告

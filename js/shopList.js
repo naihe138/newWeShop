@@ -18,72 +18,44 @@ $(function(){
 	var scroller2 = null;
 	wrapper1Height = wrapper1.height();
 	var onoff = true;
-	//
+	// 页数
+	var page = 1;
+	// 数据存储
+	var allData = {
+		list : []
+	};
 	var iScroll = new IScroll('#wrapper1');
+
+	var iScroll2 = '';
+
 	function getShopList() {
 		$.post(webUrl + '/API/Product/GetProductList', {
-			page: 1,
+			page: page,
 			sidx: 'SaleNumber',
 			rows: 10,
 			productname: null,
 			sord: 'desc'
 		}, function(res){
-			console.log(res);
 			if(res.returnstate == 200) {
-				render(res.returnvalue)
+				if(res.returnvalue.length == 0) {
+					console.log('没有更多数据了');
+					onoff = true;
+				} else{
+					for (var i = 0; i < res.returnvalue.length; i++) {
+						allData.list.push(res.returnvalue[i]);
+					}
+					render(allData);
+				}
 			}
 		})
 	}
-	function render(arr){
-		for (var i = 0; i< arr.length;i++ ) {
-			str1 += '<li>' +
-				'<a class="clearfix" href="#">' +
-				'<img src="'+arr[i].OriginalImage+'">' +
-				'<div class="textBox">' +
-				'<p class="list-title">'+arr[i].ProName+'</p>' +
-				'<p class="shop-title">' +
-				'<i class="iconfont">&#xe600</i>' +
-				'<span>'+arr[i].ShopName+'</span>' +
-				'</p>' +
-				'<p class="price clearfix">' +
-				'<span class="price-detail fl">¥<i>'+arr[i].ShopPrice+'</i></span>' +
-				'<span class="sell fr">销量:<i>'+arr[i].CollectCount+'</i></span>' +
-				'</p>' +
-				'</div>' +
-				'</a>' +
-				'</li>';
-
-			str2 += '<li>' +
-				'<a href="#">' +
-				'<img src="'+arr[i].OriginalImage+'">' +
-				'<div class="textBox">' +
-				'<p class="list-title">'+arr[i].ProName+'</p>' +
-				'<p class="shop-title">' +
-				'<i class="iconfont">&#xe600</i>' +
-				'<span>'+arr[i].ShopName+'</span>' +
-				'</p>' +
-				'<p class="price clearfix">' +
-				'<span class="price-detail fl">¥<i>'+arr[i].ShopPrice+'</i>' +
-				'</span><span class="sell fr">销量:<i>'+arr[i].CollectCount+'</i></span>' +
-				'</p>' +
-				'</div>' +
-				'</a>' +
-				'</li>';
-
-		}
-		list1.append($(str1));
-		list2.append($(str2));
-		setTimeout(function () {
-			iScroll.refresh();
-			scroller1 = wrapper1.find('.scroller').height();
-			iScroll.on('scrollEnd', function(){
-				console.log(scroller1);
-				console.log(iScroll.y + '----');
-				console.log((wrapper1Height - scroller1)+ '+++');
-			});
-		}, 0);
-		// scrollInit('#wrapper1');
-
+	function render(data){
+		console.log(data);
+		var temp1 = template('listBox1', data);
+		var temp2 = template('listBox2', data);
+		list2.html(temp1);
+		list1.html(temp2);
+		scrollInit();
 	}
 	// 切换
 	function tab(){
@@ -91,36 +63,48 @@ $(function(){
 			if(onoff){
 				wrapper1.hide(0);
 				wrapper2.show(0);
-				// scrollInit('#wrapper2');
 				$(this).html('&#xe609;');
 				wrapper2Height = wrapper2.height();
+				iScroll2 = new IScroll('#wrapper2');
+				scrollInit2();
 			}
 			else{
 				wrapper1.show(0);
 				wrapper2.hide(0);
-				// scrollInit('#wrapper1');
 				$(this).html('&#xe609;');
 				wrapper1Height = wrapper1.height();
 			}
+			scrollInit();
 			onoff = !onoff;
 		})
 	}
 	// 滚动初始化
-	function scrollInit(id){
+	function scrollInit(){
 		timer = setTimeout(function(){
-			myScroll = new IScroll(id, {
-				mouseWheel: true,
-				topOffset: 50,
-				onRefresh: function(){},
-				onScrollMove: function(){
-					console.log(111111111);
-				},
-				onScrollEnd: function(){}
+			iScroll.refresh();
+			scroller1 = wrapper1.find('.scroller').height();
+			iScroll.on('scrollEnd', function(){
+				var top = parseInt(wrapper1Height - scroller1) - parseInt(iScroll.y);
+				if (Math.abs(top) < 50) {
+					page ++;
+					getShopList();
+				}
 			});
-			console.log(myScroll);
-			// myScroll.refresh();
-			clearInterval(timer);
-		}, 100);
+		}, 10);
+	}
+	function scrollInit2(){
+		timer = setTimeout(function(){
+			iScroll2.refresh();
+			scroller2 = wrapper2.find('.scroller').height();
+			iScroll2.on('scrollEnd', function(){
+				var top = parseInt(wrapper2Height - scroller2) - parseInt(iScroll2.y);
+				if (Math.abs(top) < 50) {
+					page ++;
+					getShopList();
+					iScroll2.refresh();
+				}
+			});
+		}, 10);
 	}
 	getShopList();
 	tab();

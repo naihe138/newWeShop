@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
 }
 html,
 body,
@@ -27,9 +30,12 @@ i {
   font-style: normal;
 }
 body {
-  font-family: Tahoma, Arial, Roboto, "微软雅黑", "Microsoft YaHei", "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #f5f5f5;
   color: #333333;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
 }
 input,
 textarea {
@@ -165,6 +171,7 @@ a {
   height: 100%;
   display: block;
   font-size: 14px;
+  background: #ffffff;
 }
 [data-dpr="2"] .container .inputBox input {
   font-size: 28px;

@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-touch-callout: none;
 }
 html,
 body,
@@ -27,9 +30,12 @@ i {
   font-style: normal;
 }
 body {
-  font-family: Tahoma, Arial, Roboto, "微软雅黑", "Microsoft YaHei", "Droid Sans", "Helvetica Neue", "Droid Sans Fallback", "Heiti SC", sans-self;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   background: #f5f5f5;
   color: #333333;
+  -webkit-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
 }
 input,
 textarea {
@@ -442,4 +448,8 @@ a {
   -ms-text-size-adjust: none;
   -o-text-size-adjust: none;
   text-size-adjust: none;
+}
+.bottomText {
+  text-align: center;
+  line-height: 1rem;
 }

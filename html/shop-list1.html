@@ -14,80 +14,121 @@
 </head>
 
 <body>
-    <!-- 头部 -->
-    <div class="header padded clearfix">
-        <span class="shezhi iconfont">&#xe604;</span>
-        <div class="serch">
-            <span class="iconfont">&#xe618;</span>
-            <input type="text" value="" placeholder="搜索商品">
+<!-- 头部 -->
+<div class="header padded clearfix">
+    <span class="shezhi iconfont">&#xe604;</span>
+    <div class="serch">
+        <span class="iconfont">&#xe618;</span>
+        <input type="text" value="" placeholder="搜索商品">
+    </div>
+</div>
+<div class="container" id="container">
+    <div class="sort clearfix">
+        <div class="sortItem active">
+            <span class="iconfont">&#xe605;</span>销量
+        </div>
+        <div class="sortItem">
+            <span class="iconfont">&#xe605;</span>价格
+        </div>
+        <div class="sortItem">
+            <span class="iconfont">&#xe605;</span>上架时间
+        </div>
+        <span class="iconfont caidan" id="tabBtn">&#xe600;</span>
+    </div>
+
+    <!---->
+    <div class="wrapper" id="wrapper1">
+        <div class="scroller">
+            <ul class="list clearfix" id="list2">
+                <!--<li>-->
+                <!--<a href="#">-->
+                <!--<img src="../imgs/shoplist.png">-->
+                <!--<div class="textBox">-->
+                <!--<p class="list-title">大神大神大神大神大神大神大神大神大神大神大神大神</p>-->
+                <!--<p class="shop-title">-->
+                <!--<i class="iconfont">&#xe600</i>-->
+                <!--<span>一号铺</span>-->
+                <!--</p>-->
+                <!--<p class="price clearfix">-->
+                <!--<span class="price-detail fl">¥<i>999.00</i></span>-->
+                <!--<span class="sell fr">销量:<i>255</i></span>-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<div class="bottomText">正在加载...</div>-->
+            </ul>
         </div>
     </div>
-    <div class="container" id="container">
-        <div class="sort clearfix">
-            <div class="sortItem active">
-                <span class="iconfont">&#xe605;</span>销量
-            </div>
-            <div class="sortItem">
-                <span class="iconfont">&#xe605;</span>价格
-            </div>
-            <div class="sortItem">
-                <span class="iconfont">&#xe605;</span>上架时间
-            </div>
-            <span class="iconfont caidan" id="tabBtn">&#xe600;</span>
+
+    <!---->
+    <div class="wrapper" id="wrapper2" style="display: none;">
+        <div class="scroller">
+            <ul class="list1 clearfix" id="list1">
+                <!--<li>-->
+                <!--<a class="clearfix" href="#">-->
+                <!--<img src="../imgs/shoplist.png">-->
+                <!--<div class="textBox">-->
+                <!--<p class="list-title">大神大神大神大神大神大神大神大神大神大神大神大神</p>-->
+                <!--<p class="shop-title">-->
+                <!--<i class="iconfont">&#xe600</i>-->
+                <!--<span>一号铺</span>-->
+                <!--</p>-->
+                <!--<p class="price clearfix">-->
+                <!--<span class="price-detail fl">¥<i>999.00</i></span>-->
+                <!--<span class="sell fr">销量:<i>255</i></span>-->
+                <!--</p>-->
+                <!--</div>-->
+                <!--</a>-->
+                <!--</li>-->
+                <!--<div class="bottomText">123123</div>-->
+            </ul>
         </div>
-
-        <!---->
-        <div class="wrapper" id="wrapper1">
-            <div class="scroller">
-                <ul class="list clearfix" id="list2">
-                    <!--<li>-->
-                    <!--<a href="#">-->
-                    <!--<img src="../imgs/shoplist.png">-->
-                    <!--<div class="textBox">-->
-                    <!--<p class="list-title">大神大神大神大神大神大神大神大神大神大神大神大神</p>-->
-                    <!--<p class="shop-title">-->
-                    <!--<i class="iconfont">&#xe600</i>-->
-                    <!--<span>一号铺</span>-->
-                    <!--</p>-->
-                    <!--<p class="price clearfix">-->
-                    <!--<span class="price-detail fl">¥<i>999.00</i></span>-->
-                    <!--<span class="sell fr">销量:<i>255</i></span>-->
-                    <!--</p>-->
-                    <!--</div>-->
-                    <!--</a>-->
-                    <!--</li>-->
-                </ul>
-            </div>
-        </div>
-
-
-        <!---->
-        <div class="wrapper" id="wrapper2" style="display: none;">
-            <div class="scroller">
-                <ul class="list1 clearfix" id="list1">
-                    <!--<li>-->
-                        <!--<a class="clearfix" href="#">-->
-                            <!--<img src="../imgs/shoplist.png">-->
-                            <!--<div class="textBox">-->
-                                <!--<p class="list-title">大神大神大神大神大神大神大神大神大神大神大神大神</p>-->
-                                <!--<p class="shop-title">-->
-                                    <!--<i class="iconfont">&#xe600</i>-->
-                                    <!--<span>一号铺</span>-->
-                                <!--</p>-->
-                                <!--<p class="price clearfix">-->
-                                    <!--<span class="price-detail fl">¥<i>999.00</i></span>-->
-                                    <!--<span class="sell fr">销量:<i>255</i></span>-->
-                                <!--</p>-->
-                            <!--</div>-->
-                        <!--</a>-->
-                    <!--</li>-->
-                </ul>
-            </div>
-        </div>
-
     </div>
+</div>
 </body>
+<script id="listBox1" type="text/html">
+    {{each list as value i}}
+    <li >
+        <a href="index.html?id={{value.ID}}">
+            <img src="{{value.OriginalImage}}">
+            <div class="textBox">
+                <p class="list-title">{{value.ProName}}</p>
+                <p class="shop-title">
+                    <i class="iconfont">&#xe600</i>
+                    <span>{{value.ShopName}}</span>
+                </p>
+                <p class="price clearfix">
+                    <span class="price-detail fl">¥<i>{{value.ShopPrice}}</i></span>
+                    <span class="sell fr">销量:<i>{{value.CollectCount}}</i></span>
+                </p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script id="listBox2" type="text/html">
+    {{each list as value i}}
+    <li>
+        <a class="clearfix" href="#">
+            <img src="{{value.OriginalImage}}">
+            <div class="textBox">
+                <p class="list-title">{{value.ProName}}</p>
+                <p class="shop-title">
+                    <i class="iconfont">&#xe600</i>
+                    <span>{{value.ShopName}}</span>
+                </p>
+                <p class="price clearfix">
+                    <span class="price-detail fl">¥<i>{{value.ShopPrice}}</i></span>
+                    <span class="sell fr">销量:<i>{{value.CollectCount}}</i></span>
+                </p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
 <script type="text/javascript" src="../public/jquery.min.js"></script>
 <script type="text/javascript" src="../public/iscroll.js"></script>
+<script type="text/javascript" src="../public/template.js"></script>
 <script type="text/javascript" src="../js/shopList.js"></script>
 </html>
